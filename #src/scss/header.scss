@@ -11,7 +11,12 @@
 
   padding: 0; */
 }
-
+.header__logo {
+  & img {
+    height: 72px;
+    width: 126px;
+  }
+}
 .uk-navbar-container {
   background: rgba(255, 255, 255, 0.7);
   border: 6px solid #ffffff;
@@ -26,14 +31,14 @@
 }
 
 .uk-navbar-nav>li>a {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
 
   text-transform: none;
-  color: #000000;
+  color: #000000!important;
 }
 
 .header__lang-btn {
@@ -67,4 +72,6 @@
   top: 90%;
   right: -51%;
   z-index: 1;
+  width: 135px;
+  height: 160px;
 }
