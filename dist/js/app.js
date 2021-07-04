@@ -247,6 +247,7 @@ window.onload = function () {
     });
   }
 }
+
 // // scrollSpy для шапки
 // let intro = document.querySelector(".intro");
 // let adventages = document.querySelector(".adventages");
