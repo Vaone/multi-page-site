@@ -1,0 +1,110 @@
+.form {
+  padding: 0 0 95px 0;
+  position: relative;
+  &__wrapper {
+    height: 461px;
+    border-radius: 34px;
+    background: #FE5E7A;
+    box-shadow: 0 5px 30px rgb(254, 94, 122);
+    position: relative;
+  }
+
+  // background waves
+  &__background {
+    background: url('../img/waves.png') center no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    pointer-events: none;
+  }
+
+  &__fields {
+    border-radius: 34px;
+    padding: 93px 65px 113px 65px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+
+    line-height: 99.33%;
+    letter-spacing: -0.025em;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 45px;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+  }
+
+  &__subtitle {
+    font-size: 35px;
+    color: #FFFFFF;
+    margin-bottom: 75px;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__input {
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 99.33%;
+    height: 70px;
+
+    letter-spacing: -0.025em;
+    margin-right: 26px;
+    color: #000000;
+
+    &::placeholder {
+      color: #000;
+    }
+
+    &:focus {
+      color: #000;
+    }
+  }
+
+  &__btn {
+    background: linear-gradient(0deg, #0D1026, #0D1026), #000D83;
+    border-radius: 8px;
+    
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30.6714px;
+    line-height: 128.69%;
+    border: none;
+    color: #FFFFFF;
+    &:focus {
+      border: none;
+      box-shadow: 0 1px 5px rgba(0,0,0,.5);
+    }
+  }
+// ARM----BG-----------------------
+  &__background-arm {
+    position: absolute;
+    bottom: -450px;
+    left: 0;
+    pointer-events: none;
+    z-index: 2;
+  }
+}

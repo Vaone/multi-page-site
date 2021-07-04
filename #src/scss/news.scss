@@ -1,0 +1,87 @@
+.news__swiper {
+  width: 100%;
+  padding-bottom: 100px;
+  position: relative;
+  
+  &-title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2C2E31;
+    margin-bottom: 30px;
+  }
+  &-slider{
+    max-width: 1678px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  &-slide {
+    opacity: 0.2;
+  
+    // min-width: 22%;
+    &>.uk-card {
+      height: 749px;
+      padding: 34px 32px 0 32px;
+      border-radius: 43px 43px 0 0;
+      backdrop-filter: blur(9.61891px);
+      &>a:hover {
+        text-decoration: none;
+      }
+      & .uk-card-title {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 153.6%;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: 32px;
+        color: #171717;
+      }
+  
+      & p {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 166.69%;
+        margin-top: 32px;
+        text-align: center;
+  
+        color: #7D7E86;
+      }
+    }
+  }
+  
+}
+
+.swiper-slide-next,
+.swiper-slide-active,
+.swiper-slide-prev {
+  opacity: 1;
+}
+
+.news__swiper-pagination {
+  width: 100%;
+  bottom: 10px;
+
+  &>.swiper-pagination-bullet {
+    opacity: 1;
+    height: 6px;
+    width: 29px;
+    border-radius: 6px;
+    background: #CCD1E6;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &-active {
+      background: #F97D5F;
+    }
+  }
+}
