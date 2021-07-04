@@ -1,0 +1,112 @@
+/* INTRO Content */
+.intro {
+  padding: 0 0 64px 0;
+}
+.intro__table{
+  width: 100%;
+}
+.intro__table-row {
+  background: #fff;
+  background: #000;
+  border: 6px solid #ffffff;
+  box-shadow: 0px 12rgb (224, 178, 178) rgba(45, 71, 97, 0.07);
+  border-radius: 45px;
+
+  padding: 57px;
+  margin: 0!important;
+}
+.intro__table-column {
+  height: 757px;
+}
+
+.intro__table-item {
+  background: linear-gradient(175.25deg, #d6fbff 2.38%, #adebfe 96.16%);
+  border-radius: 23px;
+  height: 100%;
+  max-width: 500px;
+}
+
+.intro__table-column:nth-child(1) {
+  position: relative;
+}
+/* First card 1st column*/
+.intro__table-column:nth-child(1) > .intro__table-item > p {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 46px;
+  max-width: 331px;
+  margin-left: 20px;
+
+  color: #006379;
+}
+
+.intro__table-column:nth-child(1) > .intro__table-item img {
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  min-width: 120%;
+  height: auto;
+  z-index: 1;
+}
+.intro__table-column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+/* 2ndcolumn 1st row */
+.intro__table-column:nth-child(2) > .intro__table-item:nth-child(1) {
+  margin-bottom: 36px;
+  height: 50%;
+
+  background: linear-gradient(135.82deg, #ffefd8 19.8%, #f7cf99 79.6%), #e6ebf0;
+  border-radius: 23px;
+}
+/* Успешная практика */
+.intro__table-column:nth-child(2) > .intro__table-item:nth-child(1) > p {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 46px;
+
+  text-align: left;
+  color: #aa6200;
+  margin-left: 15px;
+}
+
+.intro__table-cardContent {
+  display: inline-flex;
+  position: relative;
+  margin: 35px auto 0 15px;
+}
+
+.intro__table-cardContent > h1 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 232.449px;
+  line-height: 66.4%;
+
+  color: #f8d09a;
+  margin: 0;
+}
+
+.intro__table-cardContent > h2 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 61px;
+  text-align: right;
+  color: #aa6200;
+
+  margin: 110px 0 0 10px;
+}
+
+
+/* 2nd column 2st row */
+.intro__table-column:nth-child(2) > .intro__table-item:nth-child(2) {
+  height: 50%;
+}
