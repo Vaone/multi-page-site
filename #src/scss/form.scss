@@ -1,12 +1,17 @@
 .form {
   padding: 0 0 95px 0;
   position: relative;
+
   &__wrapper {
     height: 461px;
     border-radius: 34px;
     background: #FE5E7A;
     box-shadow: 0 5px 30px rgb(254, 94, 122);
     position: relative;
+
+    @media (max-width: 900px) {
+      height: auto;
+    }
   }
 
   // background waves
@@ -23,6 +28,10 @@
   &__fields {
     border-radius: 34px;
     padding: 93px 65px 113px 65px;
+
+    @media (max-width: 1366px) {
+      padding: 60px 10px 40px 10px;
+    }
   }
 
   &__content {
@@ -45,18 +54,45 @@
     font-size: 45px;
     color: #FFFFFF;
     margin-bottom: 35px;
+    text-align: center;
+
+    @media (max-width: 1366px) {
+      font-size: 3.5vw;
+      margin-bottom: 1vw;
+    }
+
+    @media (max-width: 998px) {
+      font-size: 26px;
+    }
   }
 
   &__subtitle {
     font-size: 35px;
     color: #FFFFFF;
     margin-bottom: 75px;
+    text-align: center;
+
+    @media (max-width: 1366px) {
+      margin-bottom: 0;
+      font-size: 2.5vw;
+    }
+
+    @media (max-width: 998px) {
+      font-size: 21px;
+    }
   }
 
   &__inputs {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media (max-width: 1366px) {
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__input {
@@ -80,12 +116,25 @@
     &:focus {
       color: #000;
     }
+
+    @media (max-width: 1366px) {
+      margin-right: 0;
+    }
+
+    &:not(:last-child) {
+      @media (max-width: 1366px) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 1366px) {
+        font-size: 3vw;
+      }
+    }
   }
 
   &__btn {
     background: linear-gradient(0deg, #0D1026, #0D1026), #000D83;
     border-radius: 8px;
-    
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -94,17 +143,41 @@
     line-height: 128.69%;
     border: none;
     color: #FFFFFF;
+
     &:focus {
       border: none;
-      box-shadow: 0 1px 5px rgba(0,0,0,.5);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+    }
+
+    @media (max-width: 1366px) {
+      width: 50%;
+      font-size: 2vw;
+      padding: 5px;
     }
   }
-// ARM----BG-----------------------
+
+
+  // ARM----BG-----------------------
   &__background-arm {
     position: absolute;
     bottom: -450px;
     left: 0;
     pointer-events: none;
     z-index: 2;
+    width: 457px;
+    height: auto;
+
+    @media (max-width: 1024px) {
+      width: 357px;
+      bottom: -330px;
+    }
+    @media (max-width: 720px) {
+      width: 257px;
+      bottom: -215px;
+    }
+    @media (max-width: 480px) {
+      width: 157px;
+      bottom: -95px;
+    }
   }
 }
