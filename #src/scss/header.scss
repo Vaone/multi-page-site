@@ -128,6 +128,19 @@
   position: absolute;
   top: -30px;
   left: 25%;
+  @media (max-width: 768px) {
+    top: -40px;
+  }
+  img {
+    @media (max-width: 768px) {
+      height: auto;
+      width: 18vw;
+    }
+    @media (max-width: 662px) {
+      width: 119px;
+      height: auto;
+    }
+  }
   & > span {
     background: #000000;
     opacity: 0.6;
@@ -138,6 +151,9 @@
     top: 150px;
     left: 25px;
     animation: blur 2s infinite alternate linear;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   @keyframes blur { 
     0%{

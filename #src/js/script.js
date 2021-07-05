@@ -1,3 +1,35 @@
+// маска на телефон формы
+const tel = document.querySelector('#tel');
+var maskOptions = {
+  mask: '+{998}(00)000-00-00'
+};
+var mask = IMask(tel, maskOptions);
+
+
+// adaptive accordion in Footer 
+let accordions = document.querySelectorAll('.footer__accordion');
+let submenu__accordions = document.querySelectorAll('.submenu__accordion');
+
+if (accordions) {
+    for (let i=0; i<accordions.length; i++) {
+      let accordion = accordions[i];
+      let submenu__accordion = submenu__accordions[i];
+      function footerAccord(e) {
+        if (e.matches) { 
+          accordion.setAttribute('uk-nav', null);
+        } else {
+          accordion.removeAttribute('uk-nav');
+          submenu__accordion.removeAttribute('hidden');
+        }
+      }
+  
+      var mediaWidth = window.matchMedia("(max-width: 1024px)")
+      footerAccord(mediaWidth) // Call listener function at run time
+      mediaWidth.addListener(footerAccord) // Attach listener function on state changes
+    }
+}
+
+
 "use strict"
 // менять моложение относительно положения мыши
 window.onload = function () {
@@ -54,6 +86,25 @@ window.onload = function () {
     });
   }
 }
+
+
+
+
+// function validateForm (selector, rules) {
+//   new window.JustValidate(selector, {
+//     rules: rules,
+//     submitHandler: function (form, values, ajax) {
+//       console.log(form);
+
+//       // let formData = new FormData(form);
+
+      
+//     }
+//   })
+// }
+
+// validateForm('.form__fields', {name: {required: true}, tel: {required: true}})
+
 
 // // scrollSpy для шапки
 // let intro = document.querySelector(".intro");
