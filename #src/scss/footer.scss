@@ -28,6 +28,7 @@
       // justify-content: flex-start;
       // align-items: flex-start;
       padding-left: 0;
+      z-index: 1;
       @media (max-width: 1200px) {
         width: auto;
       }
@@ -170,7 +171,7 @@
       }
       @media (max-width: 768px) {
         width: 169px;
-        top: -40px;
+        top: -10px;
       }
     }
     &>.like__button {
@@ -185,13 +186,9 @@
       margin-bottom: 24px;
       z-index: 1;
       @media (max-width: 1024px) {
-        width: 12vw;
-        height: 12vw;
-        margin-bottom: 12px;
-      }
-      @media (max-width: 480px) {
         width: 57.6px;
         height: 57.6px;
+        margin-bottom: 12px;
       }
     }
     
