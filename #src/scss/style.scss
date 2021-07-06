@@ -171,7 +171,10 @@ section {
   animation: swing 2s infinite alternate linear;
 }
 .anim-bg2 {
-    animation: swing 2s infinite alternate cubic-bezier(0.255, 0.03, 0.515, 1);
+    animation: swing 3s infinite alternate cubic-bezier(0.255, 0.03, 0.515, 1);
+}
+.anim-bg3 {
+  animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.815, 1);
 }
 @keyframes swing {
   0% {

@@ -104,9 +104,11 @@
             margin-bottom: 31px;
             font-size: 18px;
             position: relative;
+            cursor: initial;
             @media (max-width: 1024px) {
               min-width: 150px;
               margin-bottom: 10px;
+              cursor: pointer;
             }
 
             &::after {
@@ -124,6 +126,11 @@
             }
           }
           &>.uk-nav-sub {
+            & a {
+              &:hover {
+                text-decoration: underline;
+              }
+            }
             @media (min-width: 1025px) {
               padding: 0;
             }

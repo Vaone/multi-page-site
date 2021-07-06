@@ -2411,6 +2411,12 @@ select.uk-form-width-xsmall {
     padding-right: 40px;
   }
 }
+@media (min-width: 1366px) {
+  .uk-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 /*
  * Remove margin from the last-child
  */

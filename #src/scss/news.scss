@@ -15,7 +15,7 @@
     margin-bottom: 30px;
   }
   &-slider{
-    max-width: 1678px;
+    // max-width: 1678px;
     margin: 0 auto;
     overflow-x: hidden;
   }
@@ -27,7 +27,8 @@
       height: 749px;
       padding: 34px 32px 0 32px;
       border-radius: 43px 43px 0 0;
-      backdrop-filter: blur(9.61891px);
+      background: linear-gradient(#fff 80%, transparent);
+      box-shadow: none;
       &>a:hover {
         text-decoration: none;
       }
