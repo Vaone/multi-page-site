@@ -55,9 +55,15 @@
 
       &>.social-links {
         display: flex;
-
-        &>.social-link:not(:last-child) {
-          margin-right: 20px;
+        
+        &>.social-link {
+          transition: transform .5s linear;
+          &:hover {
+            transform: translateY(-5px);
+          }
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
         }
       }
     }

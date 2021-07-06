@@ -125,15 +125,16 @@
         background: linear-gradient(135.82deg, #ffefd8 19.8%, #f7cf99 79.6%),
           #e6ebf0;
         border-radius: 23px;
-
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
         @media (max-width: 568px) {
           flex-direction: column;
         }
 
         @media (max-width: 1199.98px) {
-          display: flex;
+          flex-direction: row;
           justify-content: center;
-          align-items: center;
         }
 
         /*  контент внутри 2ого блока   */
@@ -156,7 +157,7 @@
             font-family: "Poppins", sans-serif;
             font-style: normal;
             font-weight: 800;
-            font-size: 132.449px;
+            font-size: 232.449px;
             line-height: 66.4%;
 
             color: #f8d09a;
