@@ -369,11 +369,14 @@
         & .row__middleSection-item {
           margin-right: 17px;
           background: url("../img/Group.png") left no-repeat,
-            url("../img/DNA.png") (right center) / contain no-repeat,
-            (linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0);
+            url("../img/DNA.png") (right center) / 22vw no-repeat, #e6ebf0;
 
           @media (max-width: 1199.98px) {
             margin-right: 0;
+          }
+          @media (max-width: 1600px) {
+            background: url("../img/Group.png") left no-repeat,
+            url("../img/DNA.png") (right center) / 200px no-repeat, #e6ebf0;
           }
         }
       }
@@ -386,11 +389,14 @@
         & .row__middleSection-item {
           margin-left: 17px;
           background: url("../img/Group.png") left no-repeat,
-            url("../img/Atom.png") (right center) / contain no-repeat,
-            (linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0);
+            url("../img/Atom.png") (right center) / 22vw no-repeat, #e6ebf0;
 
           @media (max-width: 1199.98px) {
             margin-left: 0;
+          }
+          @media (max-width: 1600px) {
+            background: url("../img/Group.png") left no-repeat,
+            url("../img/Atom.png") (right center) / 200px no-repeat, #e6ebf0;
           }
         }
       }
@@ -484,12 +490,10 @@
       /* 1st column */
       &:nth-child(1) {
         & .row__bottomSection-item {
-          background: url("../img/Virus.png") (left 35px) no-repeat,
-            (linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0);
+          background: url("../img/Virus.png") (left 35px) no-repeat, #e6ebf0;
 
           @media (max-width: 1199.98px) {
-            background: url("../img/Virus.png") left/12vw no-repeat,
-              (linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0);
+            background: url("../img/Virus.png") left/12vw no-repeat, #e6ebf0;
           }
         }
       }
@@ -497,12 +501,10 @@
       /* 2nd column */
       &:nth-child(2) {
         & .row__bottomSection-item {
-          background: url("../img/pillsWithoutShadow.png") (left 35px) no-repeat,
-            (linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0);
+          background: url("../img/pillsWithoutShadow.png") (left 35px) no-repeat, #e6ebf0;
 
           @media (max-width: 1199.98px) {
-            background: url("../img/pillsWithoutShadow.png") left / 12vw no-repeat,
-              (linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0);
+            background: url("../img/pillsWithoutShadow.png") left / 12vw no-repeat, #e6ebf0;
           }
         }
       }
@@ -510,12 +512,10 @@
       /* 3rd column */
       &:nth-child(3) {
         & .row__bottomSection-item {
-          background: url("../img/Folder.png") (left 35px) no-repeat,
-            (linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0);
+          background: url("../img/Folder.png") (left 35px) no-repeat, #e6ebf0;
 
           @media (max-width: 1199.98px) {
-            background: url("../img/Folder.png") left / 12vw no-repeat,
-              (linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0);
+            background: url("../img/Folder.png") left / 12vw no-repeat, #e6ebf0;
           }
         }
       }

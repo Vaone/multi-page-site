@@ -116,6 +116,14 @@
     img {
       width: 248px;
       height: 248px;
+      @media (max-width: 1366px) {
+        width: 19vw;
+        height: 19vw;
+      }
+      @media (max-width: 768px) {
+        width: 146px;
+        height: 146px;
+      }
     }
   }
 }

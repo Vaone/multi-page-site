@@ -1,9 +1,20 @@
 // маска на телефон формы
 const tel = document.querySelector('#tel');
 var maskOptions = {
-  mask: '+{998}(00)000-00-00'
+  mask: '{+998}(00)000-00-00'
 };
-var mask = IMask(tel, maskOptions);
+
+if (tel) {
+  tel.oninput = function() {
+    if (tel.value == "9") {
+      tel.value = "+9989";
+    } else if (tel.value == "+") {
+      tel.value = "+998";
+    }
+  };
+  var mask = IMask(tel, maskOptions);
+}
+
 
 
 // adaptive accordion in Footer 

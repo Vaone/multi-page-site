@@ -15392,9 +15392,7 @@ iframe.uk-cover {
 }
 
 .uk-navbar-toggle {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fe5e7a), to(#fe5e7a)), #2ab590;
-  background: -o-linear-gradient(bottom, #fe5e7a, #fe5e7a), #2ab590;
-  background: linear-gradient(0deg, #fe5e7a, #fe5e7a), #2ab590;
+  background: #fe5e7a;
   border: none;
   border-radius: 100px;
   min-height: 60px;
@@ -15753,26 +15751,14 @@ iframe.uk-cover {
 }
 
 .no-webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{
-  background: url("../img/Group.png") left no-repeat, url("../img/DNA.png") right center/contain no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-.no-webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{
-  background: url("../img/Group.png") left no-repeat, url("../img/DNA.png") right center/contain no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.no-webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{
-  background: url("../img/Group.png") left no-repeat, url("../img/DNA.png") right center/contain no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+  background: url("../img/Group.png") left no-repeat, url("../img/DNA.png") right center/22vw no-repeat, #e6ebf0; }
 
 .intro .row__middleSection-Clm:first-child .row__middleSection-item {
   margin-right: 17px;
 }
 
 .no-webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{
-  background: url("../img/Group.png") left no-repeat, url("../img/Atom.png") right center/contain no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-.no-webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{
-  background: url("../img/Group.png") left no-repeat, url("../img/Atom.png") right center/contain no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.no-webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{
-  background: url("../img/Group.png") left no-repeat, url("../img/Atom.png") right center/contain no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+  background: url("../img/Group.png") left no-repeat, url("../img/Atom.png") right center/22vw no-repeat, #e6ebf0; }
 
 .intro .row__middleSection-Clm:last-child .row__middleSection-item {
   margin-left: 17px;
@@ -15819,31 +15805,13 @@ iframe.uk-cover {
 }
 
 .no-webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{
-  background: url("../img/Virus.png") left 35px no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-.no-webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{
-  background: url("../img/Virus.png") left 35px no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.no-webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{
-  background: url("../img/Virus.png") left 35px no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+  background: url("../img/Virus.png") left 35px no-repeat, #e6ebf0; }
 
 .no-webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{
-  background: url("../img/pillsWithoutShadow.png") left 35px no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-.no-webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{
-  background: url("../img/pillsWithoutShadow.png") left 35px no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.no-webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{
-  background: url("../img/pillsWithoutShadow.png") left 35px no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+  background: url("../img/pillsWithoutShadow.png") left 35px no-repeat, #e6ebf0; }
 
 .no-webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{
-  background: url("../img/Folder.png") left 35px no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-.no-webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{
-  background: url("../img/Folder.png") left 35px no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.no-webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{
-  background: url("../img/Folder.png") left 35px no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+  background: url("../img/Folder.png") left 35px no-repeat, #e6ebf0; }
 
 .anim__background {
   position: relative;
@@ -18016,6 +17984,12 @@ iframe.uk-cover {
 }
 
 @media (max-width: 1600px) {
+  .no-webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{
+    background: url("../img/Group.png") left no-repeat, url("../img/DNA.png") right center/200px no-repeat, #e6ebf0; }
+
+  .no-webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{
+    background: url("../img/Group.png") left no-repeat, url("../img/Atom.png") right center/200px no-repeat, #e6ebf0; }
+
   .footer__content-top > .right-side > .uk-nav:not(:last-child) {
     margin-right: 5vw;
   }
@@ -18099,6 +18073,11 @@ iframe.uk-cover {
     width: 50%;
     font-size: 2vw;
     padding: 5px;
+  }
+
+  .experts__swiper > .anim__background img {
+    width: 19vw;
+    height: 19vw;
   }
 }
 
@@ -18330,31 +18309,13 @@ iframe.uk-cover {
   }
 
   .no-webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{
-    background: url("../img/Virus.png") left/12vw no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-  .no-webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{
-    background: url("../img/Virus.png") left/12vw no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-  .no-webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{
-    background: url("../img/Virus.png") left/12vw no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+    background: url("../img/Virus.png") left/12vw no-repeat, #e6ebf0; }
 
   .no-webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{
-    background: url("../img/pillsWithoutShadow.png") left/12vw no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-  .no-webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{
-    background: url("../img/pillsWithoutShadow.png") left/12vw no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-  .no-webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{
-    background: url("../img/pillsWithoutShadow.png") left/12vw no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+    background: url("../img/pillsWithoutShadow.png") left/12vw no-repeat, #e6ebf0; }
 
   .no-webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{
-    background: url("../img/Folder.png") left/12vw no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-  .no-webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{
-    background: url("../img/Folder.png") left/12vw no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-  .no-webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{
-    background: url("../img/Folder.png") left/12vw no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+    background: url("../img/Folder.png") left/12vw no-repeat, #e6ebf0; }
 
   .anim__background-cloud {
     left: -60px;
@@ -18589,6 +18550,11 @@ iframe.uk-cover {
     height: auto;
   }
 
+  .experts__swiper > .anim__background img {
+    width: 146px;
+    height: 146px;
+  }
+
   .footer__content-bottom img {
     width: 169px;
     top: -10px;
@@ -18766,79 +18732,39 @@ iframe.uk-cover {
 
 .webp .intro .row__topSection-thirdClm > .row__topSection-item{ background: url(../img/Tasklist.webp) bottom right/contain no-repeat, linear-gradient(135.82deg, #ffe2f3 19.8%, #f7abd1 79.6%), #e6ebf0; }
 
-.webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/DNA.webp) right center/contain no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
+.webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/DNA.webp) right center/22vw no-repeat, #e6ebf0; }
 
-.webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/DNA.webp) right center/contain no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
+.webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/Atom.webp) right center/22vw no-repeat, #e6ebf0; }
 
-.webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/DNA.webp) right center/contain no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+.webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{ background: url(../img/Virus.webp) left 35px no-repeat, #e6ebf0; }
 
-.webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/Atom.webp) right center/contain no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
+.webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{ background: url(../img/pillsWithoutShadow.webp) left 35px no-repeat, #e6ebf0; }
 
-.webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/Atom.webp) right center/contain no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/Atom.webp) right center/contain no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{ background: url(../img/Virus.webp) left 35px no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{ background: url(../img/Virus.webp) left 35px no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{ background: url(../img/Virus.webp) left 35px no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{ background: url(../img/pillsWithoutShadow.webp) left 35px no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{ background: url(../img/pillsWithoutShadow.webp) left 35px no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{ background: url(../img/pillsWithoutShadow.webp) left 35px no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{ background: url(../img/Folder.webp) left 35px no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{ background: url(../img/Folder.webp) left 35px no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-
-.webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{ background: url(../img/Folder.webp) left 35px no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+.webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{ background: url(../img/Folder.webp) left 35px no-repeat, #e6ebf0; }
 
 .webp .form__background{ background: url(../img/waves.webp) center no-repeat; }
 
-@media (max-width: 1199.98px){
+@media (max-width: 1600px){
 
-  .webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{ background: url(../img/Virus.webp) left/12vw no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
+  .webp .intro .row__middleSection-Clm:first-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/DNA.webp) right center/200px no-repeat, #e6ebf0; }
+}
+
+@media (max-width: 1600px){
+
+  .webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{ background: url(../img/Group.webp) left no-repeat, url(../img/Atom.webp) right center/200px no-repeat, #e6ebf0; }
 }
 
 @media (max-width: 1199.98px){
 
-  .webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{ background: url(../img/Virus.webp) left/12vw no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
+  .webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{ background: url(../img/Virus.webp) left/12vw no-repeat, #e6ebf0; }
 }
 
 @media (max-width: 1199.98px){
 
-  .webp .intro .row__bottomSection-Clm:nth-child(1) .row__bottomSection-item{ background: url(../img/Virus.webp) left/12vw no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+  .webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{ background: url(../img/pillsWithoutShadow.webp) left/12vw no-repeat, #e6ebf0; }
 }
 
 @media (max-width: 1199.98px){
 
-  .webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{ background: url(../img/pillsWithoutShadow.webp) left/12vw no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-}
-
-@media (max-width: 1199.98px){
-
-  .webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{ background: url(../img/pillsWithoutShadow.webp) left/12vw no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-}
-
-@media (max-width: 1199.98px){
-
-  .webp .intro .row__bottomSection-Clm:nth-child(2) .row__bottomSection-item{ background: url(../img/pillsWithoutShadow.webp) left/12vw no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
-}
-
-@media (max-width: 1199.98px){
-
-  .webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{ background: url(../img/Folder.webp) left/12vw no-repeat, -webkit-gradient(linear, left bottom, left top, from(#f6f9fc), to(#f6f9fc)), #e6ebf0; }
-}
-
-@media (max-width: 1199.98px){
-
-  .webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{ background: url(../img/Folder.webp) left/12vw no-repeat, -o-linear-gradient(bottom, #f6f9fc, #f6f9fc), #e6ebf0; }
-}
-
-@media (max-width: 1199.98px){
-
-  .webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{ background: url(../img/Folder.webp) left/12vw no-repeat, linear-gradient(0deg, #f6f9fc, #f6f9fc), #e6ebf0; }
+  .webp .intro .row__bottomSection-Clm:nth-child(3) .row__bottomSection-item{ background: url(../img/Folder.webp) left/12vw no-repeat, #e6ebf0; }
 }
