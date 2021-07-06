@@ -15413,11 +15413,12 @@ iframe.uk-cover {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  padding: 0;
   text-transform: none;
   color: #000000;
   padding: 0 10px;
-  border-radius: 18px;
+  border-radius: 30px;
+  height: 59px;
+  min-height: auto;
   -webkit-transition: background .5s linear, color .5s linear;
   -o-transition: background .5s linear, color .5s linear;
   transition: background .5s linear, color .5s linear;
@@ -15475,7 +15476,7 @@ iframe.uk-cover {
   background: #fe5e7a;
   -webkit-box-shadow: 0px 31px 45px -18px rgba(89, 86, 233, 0.44);
           box-shadow: 0px 31px 45px -18px rgba(89, 86, 233, 0.44);
-  border-radius: 1111px;
+  border-radius: 30px;
   border: none;
   margin-left: 27px;
   font-family: "Work Sans", sans-serif;
@@ -18013,6 +18014,10 @@ iframe.uk-cover {
 }
 
 @media (max-width: 1367px) {
+  .uk-navbar-right > .uk-navbar-nav > li > a {
+    height: 43px;
+  }
+
   .header__lang-btn {
     margin-left: 0;
     width: 101px;
