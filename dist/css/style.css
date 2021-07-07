@@ -16062,9 +16062,9 @@ iframe.uk-cover {
   height: 749px;
   padding: 34px 32px 0 32px;
   border-radius: 43px 43px 0 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #fff), to(transparent));
-  background: -o-linear-gradient(#fff 80%, transparent);
-  background: linear-gradient(#fff 80%, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #fff), to(rgba(255, 255, 255, 0.001)));
+  background: -o-linear-gradient(#fff 80%, rgba(255, 255, 255, 0.001));
+  background: linear-gradient(#fff 80%, rgba(255, 255, 255, 0.001));
   -webkit-box-shadow: none;
           box-shadow: none;
 }
