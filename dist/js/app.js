@@ -5284,12 +5284,9 @@ var maskOptions = {
 };
 
 if (tel) {
-  tel.oninput = function() {
-    if (tel.value == "9") {
-      tel.value = "+9989";
-    } else if (tel.value == "+") {
-      tel.value = "+998";
-    }
+  tel.onfocus = function() {
+    tel.value = "+998(";
+    mask.updateValue();
   };
   var mask = IMask(tel, maskOptions);
 }
@@ -5324,17 +5321,17 @@ if (accordions) {
 // менять моложение относительно положения мыши
 window.onload = function () {
   const parallax = document.querySelector('.content');
+  const paralaxItem1 = document.querySelector('.anim__background-mask');
+  const paralaxItem2 = document.querySelector('.anim__background-cloud');
+  const paralaxItem3 = document.querySelector('.anim__background-squareP');
+  const paralaxItem4 = document.querySelector('.anim__background-squareB');
+  const paralaxItem5 = document.querySelector('.anim__background-rectangle');
+  const paralaxItem6 = document.querySelector('.anim-bg-pills');
+  const paralaxItem7 = document.querySelector('.experts__swiper-bg');
+  const paralaxItem8 = document.querySelector('.anim__background-footerAtom');
+  const paralaxItem9 = document.querySelector('.header__cursor');
+  
   if (parallax) {
-    const paralaxItem1 = document.querySelector('.anim__background-mask');
-    const paralaxItem2 = document.querySelector('.anim__background-cloud');
-    const paralaxItem3 = document.querySelector('.anim__background-squareP');
-    const paralaxItem4 = document.querySelector('.anim__background-squareB');
-    // const paralaxItem5 = document.querySelector('.anim__background-rectangle');
-    const paralaxItem6 = document.querySelector('.anim-bg-pills');
-    const paralaxItem7 = document.querySelector('.experts__swiper-bg');
-    const paralaxItem8 = document.querySelector('.anim__background-footerAtom');
-    const paralaxItem9 = document.querySelector('.header__cursor');
-    
     const changer = 25;
     const changer2 = 50;
 
@@ -5349,16 +5346,34 @@ window.onload = function () {
 
       positionX = positionX + (distX * speed);
       positionY = positionY + (distY * speed);
-
-      paralaxItem1.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%);`;
-      paralaxItem2.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%);`;
-      paralaxItem3.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%) rotate(45deg);`;
-      paralaxItem4.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%);`;
-      // paralaxItem5.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%);`;
-      paralaxItem6.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%);`;
-      paralaxItem7.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%) rotate(37deg);`;
-      paralaxItem8.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%);`;
-      paralaxItem9.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%);`;
+      
+      if (paralaxItem1) {
+        paralaxItem1.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%);`;
+      };
+      if (paralaxItem2) {
+        paralaxItem2.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%);`;
+      }; 
+      if (paralaxItem3) {
+        paralaxItem3.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%) rotate(45deg);`;
+      }; 
+      if (paralaxItem4) {
+        paralaxItem4.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%);`;
+      }; 
+      if (paralaxItem5) {
+        paralaxItem5.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%);`;
+      }; 
+      if (paralaxItem6) {
+        paralaxItem6.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%);`;
+      };
+      if (paralaxItem7) {
+        paralaxItem7.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%) rotate(37deg);`;
+      };
+      if (paralaxItem8) {
+        paralaxItem8.style.cssText = `transform: translate(${positionX / changer}%,${positionY / changer}%);`;
+      };
+      if (paralaxItem9) {
+        paralaxItem9.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%);`;
+      };
 
       requestAnimationFrame(setMousePrallaxStyle);
     }

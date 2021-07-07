@@ -1,8 +1,6 @@
 // @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&display=swap&subset=cirillic-ext");
 // @import "fonts";
 
-// $fontFamily: "Roboto";
-// $font-family: 'Yandex Sans Text';
 //переменные
 // $minWidth: 320;
 // $maxWidth: 1366;
@@ -17,6 +15,7 @@
 // $thirdColor: #116868;
 // $thirdTr: #11d8ff24;
 
+// очистка стилей
 // *,
 // *::after,
 // *::before {
@@ -69,6 +68,7 @@
 //     resize: none;
 //     padding: 0;
 // }
+
 //swiper
 ._swiper {
   overflow: hidden;
@@ -89,89 +89,164 @@
   flex-direction: column;
 }
 
-// .content {
-//   flex: 1 0 auto;
-// }
+// Container with border-radius
+.block__wrapper {
+  background: #fff;
+  border-top: 6px solid #ffffff;
+  box-shadow: 0px 12px 54px rgba(45, 71, 97, 0.07);
+  border-radius: 45px;
+  padding: 46px 45px 77px 45px;
+}
 
-// .__container {
-//   max-width: $maxWidthContainer + px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-// }
+// title
+.block__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #2c2e31;
+  margin-bottom: 30px;
+  @media (max-width: 998px) {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+}
 
-// // Кнопка забронировать
-// .btn-order {
-//   max-width: 160px;
-//   margin-right: 40px;
-//   // @media (max-width: 445px) {
-//   //   display: none;
-//   // }
-//   @media (min-width: 1366px) {
-//     max-width: 204px;
-//   }
-//   @media (min-width: 1024px) {
-//     margin-right: 0;
-//   }
-//   &__click {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 7px 40px;
-//     background: #fed305;
-//     border-radius: 8px;
-//     height: 48px;
-//     width: 100%;
-//     font-weight: 500;
-//     font-size: 13px;
-//     line-height: 15px;
+// card
+.block__card {
+  border-radius: 29px;
+  background: #f6f9fc;
+  padding: 44px 41px !important;
 
-//     transition: background .5s linear, box-shadow .5s linear;
-//     &::after {
-//       content: "";
-//       min-width: 3px;
-//       height: 8px;
-//       margin-left: 6px;
-//       background: url("../img/Vector.svg") center no-repeat;
-//       background-size: 3px 8px;
-//       @media (min-width: 1441px) {
-//         background-size: 6px 12px;
-//         min-width: 7px;
-//         height: 10px;
-//       }
-//     }
-//     &:hover {
-//       cursor: pointer;
-//       background: #fee505;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 153.6%;
+  letter-spacing: 1px;
+  color: #171717;
+  &-title {
+    margin-top: 28px;
+  }
+  &-description {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 166.69%;
 
-//       box-shadow: 0 0 10px #fee505;
-//     }
-//     @media (min-width: 1441px) {
-//       font-size: 15px;
-//     }
-//   }
-// }
+    color: #7d7e86;
+    margin-bottom: 27px;
+  }
+}
 
-// // анимация появления
-// section {
-//   opacity: 0;
-//   transform: translate3d(-20px, 0, 0);
-//   transition: opacity ease-in-out .7s, transform ease-in-out .7s;
-// }
-// .visible {
-//   opacity: 1;
-//   transform: translate3d(0, 0, 0);
-// }
-section, header {
+section,
+header {
   background: #f7fafe;
   width: 100%;
   height: 100%;
+}
+
+// animation
+
+//  -------------background pictures --------------
+.anim__background {
+  position: relative;
+  z-index: 1;
+
+  &-mask {
+    position: absolute;
+    top: -800px;
+    left: -45px;
+    z-index: 2;
+    @media (max-width: 768px) {
+      left: -30px;
+    }
+    img {
+      width: 183px;
+      height: 183px;
+      @media (max-width: 768px) {
+        width: 22vw;
+        height: 22vw;
+      }
+      @media (max-width: 420px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  &-cloud {
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    z-index: 5;
+    @media (max-width: 768px) {
+      left: -40px;
+    }
+    @media (max-width: 1199.98px) {
+      left: -60px;
+      top: -60px;
+    }
+    img {
+      width: 175px;
+      height: 129px;
+      @media (max-width: 768px) {
+        width: 22vw;
+        height: auto;
+      }
+      @media (max-width: 420px) {
+        width: 100px;
+        height: auto;
+      }
+    }
+
+    
+  }
+
+  // purple square
+  &-squareP {
+    position: absolute;
+    top: -660px;
+    right: -27px;
+    transform: rotate(45deg);
+    background: rgba(254, 94, 122, 0.5);
+    height: 47px;
+    width: 43px;
+    z-index: 1;
+  }
+
+  // blue square
+  &-squareB {
+    position: absolute;
+    top: 250px;
+    right: -40px;
+    height: 71px;
+    width: 71px;
+    background: rgba(#4bcffa, 0.5);
+    z-index: 1;
+  }
+
+  // rectangle
+  &-rectangle {
+    position: absolute;
+    top: 375px;
+    left: -18px;
+    height: 176px;
+    width: 17px;
+    background: #fe5e7a;
+    z-index: 1;
+  }
 }
 
 .anim-bg {
   animation: swing 2s infinite alternate linear;
 }
 .anim-bg2 {
-    animation: swing 3s infinite alternate cubic-bezier(0.255, 0.03, 0.515, 1);
+  animation: swing 3s infinite alternate cubic-bezier(0.255, 0.03, 0.515, 1);
 }
 .anim-bg3 {
   animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.815, 1);
@@ -185,6 +260,30 @@ section, header {
   }
 }
 
+// кнопка
+.btn {
+  min-width: 176.46px;
+  min-height: 61.56px;
+  background: #fe5e7a;
+  box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+  border-radius: 5px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 166.69%;
+
+  padding: 16px 34px;
+  color: #ffffff;
+  transition: box-shadow .5s linear, background-color .5s linear;
+  &:hover {
+    background: #0d1026;
+    box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
 @import "swiper.min";
 @import "uikit";
 @import "header";
@@ -192,4 +291,16 @@ section, header {
 @import "form";
 @import "news";
 @import "experts";
+@import "treatmentNav";
 @import "footer";
+
+// // анимация появления
+// section {
+//   opacity: 0;
+//   transform: translate3d(-20px, 0, 0);
+//   transition: opacity ease-in-out .7s, transform ease-in-out .7s;
+// }
+// .visible {
+//   opacity: 1;
+//   transform: translate3d(0, 0, 0);
+// }
