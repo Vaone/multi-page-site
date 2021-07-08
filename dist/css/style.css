@@ -105,7 +105,7 @@
 .accordion__items-element .accordion__item-title:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 21.4732px;
+  font-size: 21px;
   line-height: 130%;
   color: #1b1139;
 }
@@ -114,6 +114,26 @@
 .accordion__items-element .accordion__item-title:focus::before,
 .accordion__items-element .accordion__item-title:hover::before {
   float: left;
+  margin: 0 5px 0 0;
+  background-image: url("../img/plus-icon.svg");
+  background-size: contain;
+}
+
+.accordion__items-element .uk-open > .accordion__item-title::before {
+  background-image: url("../img/minus-icon.svg");
+}
+
+.accordion__items-element .accordion__item-content {
+  font-size: 17px;
+  line-height: 150.7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.12px;
+  color: #363049;
 }
 
 section,
@@ -18762,12 +18782,27 @@ iframe.uk-cover {
 }
 
 @media (max-width: 768px) {
+  .block__wrapper {
+    padding: 25px 25px 40px 25px;
+  }
+
   .block__card-subtitle {
     font-size: 14px;
   }
 
   .block__card-description {
     font-size: 14px;
+  }
+
+  .accordion__items-element .accordion__item-title,
+  .accordion__items-element .accordion__item-title:focus,
+  .accordion__items-element .accordion__item-title:hover {
+    font-size: 18px;
+  }
+
+  .accordion__items-element .accordion__item-content {
+    font-size: 14px;
+    line-height: 1.1;
   }
 
   .anim__background-mask {
@@ -18921,6 +18956,14 @@ iframe.uk-cover {
   .form__background-arm {
     width: 157px;
     bottom: -95px;
+  }
+}
+
+@media (max-width: 425px) {
+  .accordion__items-element .accordion__item-title,
+  .accordion__items-element .accordion__item-title:focus,
+  .accordion__items-element .accordion__item-title:hover {
+    font-size: 15px;
   }
 }
 

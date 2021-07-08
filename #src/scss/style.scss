@@ -96,6 +96,9 @@
   box-shadow: 0px 12px 54px rgba(45, 71, 97, 0.07);
   border-radius: 45px;
   padding: 46px 45px 77px 45px;
+  @media (max-width: 768px) {
+    padding: 25px 25px 40px 25px;
+  }
 }
 
 // title
@@ -174,17 +177,45 @@
     & .accordion__item-card {
       border-radius: 11.9295px;
     }
+
     & .accordion__item-title,
     .accordion__item-title:focus,
     .accordion__item-title:hover {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
-      font-size: 21.4732px;
+      font-size: 21px;
       line-height: 130%;
 
       color: #1b1139;
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+      @media (max-width: 425px) {
+        font-size: 15px;
+      }
       &::before {
         float: left;
+        margin: 0 5px 0 0;
+        background-image: url("../img/plus-icon.svg");
+        background-size: contain;
+      }
+    }
+    .uk-open > .accordion__item-title::before {
+      background-image: url("../img/minus-icon.svg");
+    }
+
+    & .accordion__item-content {
+      font-size: 17px;
+      line-height: 150.7%;
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.12px;
+
+      color: #363049;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 1.1;
       }
     }
   }
