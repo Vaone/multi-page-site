@@ -16527,6 +16527,54 @@ iframe.uk-cover {
   right: -70px;
 }
 
+.our-location {
+  padding-bottom: 130px;
+}
+
+.our-location__map {
+  border-radius: 23px;
+  overflow: hidden;
+  position: relative;
+  height: 808px;
+}
+
+.our-location__map .desc__map {
+  width: 587px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 24px 113px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 24px 113px rgba(0, 0, 0, 0.3);
+  padding: 40px 25px 40px 25px;
+  border-radius: 12px;
+  z-index: 1;
+  position: absolute;
+  bottom: 64px;
+  right: 47px;
+}
+
+.our-location__map .desc__map-logo {
+  margin-bottom: 40px;
+}
+
+.our-location__map .desc__map-wrapper .cont__map {
+  font-family: "Poppins", sans-serif;
+}
+
+.our-location__map .desc__map-wrapper .cont__map-icon {
+  margin-right: 10px;
+}
+
+.our-location__map .desc__map-wrapper .cont__map-title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fe5e7a;
+}
+
+.our-location__map .desc__map-wrapper .cont__map-text {
+  font-size: 17px;
+  line-height: 25px;
+  color: #000000;
+}
+
 .footer__content {
   background: #FE5E7A;
   width: 100%;

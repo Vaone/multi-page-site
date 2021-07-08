@@ -1,0 +1,47 @@
+.our-location {
+  padding-bottom: 130px;
+  &__map {
+    border-radius: 23px;
+    overflow: hidden;
+    position: relative;
+    height: 808px;
+    & .desc__map {
+      width: 587px;
+      background: #ffffff;
+      box-shadow: 0px 24px 113px rgba(0, 0, 0, 0.3);
+
+      padding: 40px 25px 40px 25px;
+      border-radius: 12px;
+      z-index: 1;
+      position: absolute;
+      bottom: 64px;
+      right: 47px;
+
+      &-logo {
+        margin-bottom: 40px;
+      }
+      &-wrapper {
+        & .cont__map {
+          font-family: "Poppins", sans-serif;
+
+          &-icon {
+            margin-right: 10px;
+          }
+          &-wrapper {
+          }
+          &-title {
+            font-size: 20px;
+            line-height: 30px;
+            color: #fe5e7a;
+          }
+          &-text {
+            font-size: 17px;
+            line-height: 25px;
+
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
