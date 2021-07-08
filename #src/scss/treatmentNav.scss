@@ -1,18 +1,16 @@
-.treatmentNav {
+.treatment-nav {
   padding-bottom: 131px;
-  // overflow-x: hidden;
+  
   & .anim__background-mask {
     top: -105px;
     left: -140px;
   }
-  & .anim__block-footerAtom {
-    position: absolute;
-    bottom: -1366px;
-    right: -387px;
-    &-footerAtom {
-      // position: absolute;
-      // top: 0;
-      // left: 0;
+  & .block__background-anim {
+    position: relative;
+    & .anim__bg-atom {
+      position: absolute;
+      top: -140px;
+      right: -220px;
     }
   }
 }

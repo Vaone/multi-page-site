@@ -5328,7 +5328,7 @@ window.onload = function () {
   const paralaxItem5 = document.querySelector('.anim__background-rectangle');
   const paralaxItem6 = document.querySelector('.anim-bg-pills');
   const paralaxItem7 = document.querySelector('.experts__swiper-bg');
-  const paralaxItem8 = document.querySelector('.anim__background-footerAtom');
+  const paralaxItem8 = document.querySelector('.anim__bg-atom');
   const paralaxItem9 = document.querySelector('.header__cursor');
   
   if (parallax) {
