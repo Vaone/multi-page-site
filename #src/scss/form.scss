@@ -102,15 +102,16 @@
   &__input {
     background: #ffffff;
     border-radius: 8px;
+    height: 70px;
+    margin-right: 10px;
+
     font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 99.33%;
-    height: 70px;
     letter-spacing: -0.025em;
     color: #000000;
-    margin-right: 10px;
     &::placeholder {
       color: rgb(114, 114, 114);
     }
@@ -134,16 +135,17 @@
   &__btn {
     background: #0d1026;
     border-radius: 8px;
+    border: none;
+    transition-property: background;
+    transition-duration: 0.5s;
 
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30.6714px;
     line-height: 128.69%;
-    border: none;
     color: #ffffff;
-    transition-property: background;
-    transition-duration: 0.5s;
+    
     &:hover {
       color: #ffffff;
       background: rgb(148, 15, 15);
@@ -220,7 +222,7 @@
   
   position: absolute;
   top: -18px;
-  left: 50%;
+  right: 30px;
   padding: 0 5px;
 }
 .form__input-error._error{

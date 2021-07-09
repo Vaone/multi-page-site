@@ -16095,15 +16095,15 @@ iframe.uk-cover {
 .form__input {
   background: #ffffff;
   border-radius: 8px;
+  height: 70px;
+  margin-right: 10px;
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 99.33%;
-  height: 70px;
   letter-spacing: -0.025em;
   color: #000000;
-  margin-right: 10px;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -16133,19 +16133,19 @@ iframe.uk-cover {
 .form__btn {
   background: #0d1026;
   border-radius: 8px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30.6714px;
-  line-height: 128.69%;
   border: none;
-  color: #ffffff;
   -webkit-transition-property: background;
   -o-transition-property: background;
   transition-property: background;
   -webkit-transition-duration: 0.5s;
        -o-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30.6714px;
+  line-height: 128.69%;
+  color: #ffffff;
 }
 
 .form__btn:hover {
@@ -16201,7 +16201,7 @@ iframe.uk-cover {
   font-size: 0;
   position: absolute;
   top: -18px;
-  left: 50%;
+  right: 30px;
   padding: 0 5px;
 }
 
