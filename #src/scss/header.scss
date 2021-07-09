@@ -116,6 +116,11 @@
           background: #fe5e7a;
           color: #fff;
         }
+        &>.header__nav-link {
+          & img {
+            border-radius: 50%;
+          }
+        }
       }
     }
   }
@@ -144,6 +149,9 @@
     position: relative;
     cursor: pointer;
     transition: background .5s linear;
+    & img {
+      border-radius: 50%;
+    }
     &:hover {
       background: #fe5e7ad4;
     }

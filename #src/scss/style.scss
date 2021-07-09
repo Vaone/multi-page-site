@@ -15,60 +15,6 @@
 // $thirdColor: #116868;
 // $thirdTr: #11d8ff24;
 
-// очистка стилей
-// *,
-// *::after,
-// *::before {
-//     margin: 0;
-//     padding: 0;
-//     border: 0;
-//     box-sizing: border-box;
-// }
-
-// html,
-// body{
-//     height: 100%;
-//     line-height: 1;
-//     // font-family: $font-family;
-//     // font-feature-settings: 'ss08' on;
-//     color: #000;
-//     font-size: 14px;
-//     &._lock {
-//         overflow: hidden;
-//     }
-//     background-color: #fff;
-// }
-
-// a {
-//     text-decoration: none;
-//     color: #000;
-// }
-
-// li, ol, ul {
-//     list-style: none;
-// }
-
-// img {
-//     vertical-align: top;
-// }
-
-// h1,h2,h3,h4,h5,h6 {
-//     font-weight: inherit;
-//     font-size: inherit;
-// }
-
-// .input {
-//     border-radius: 0 !important;
-//     width: 100%;
-//     display: block;
-//     padding: 0 20px;
-// }
-
-// textarea.input {
-//     resize: none;
-//     padding: 0;
-// }
-
 //swiper
 ._swiper {
   overflow: hidden;
@@ -387,3 +333,4 @@ header {
 //   opacity: 1;
 //   transform: translate3d(0, 0, 0);
 // }
+
