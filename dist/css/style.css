@@ -78,6 +78,12 @@
   margin-bottom: 27px;
 }
 
+.block__card-pagination .uk-active span {
+  color: #fff;
+  border-radius: 20px;
+  background: #fe5e7a;
+}
+
 .accordion__btns > li {
   margin-top: 5px;
 }
