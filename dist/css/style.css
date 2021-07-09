@@ -16469,6 +16469,7 @@ iframe.uk-cover {
 
 .treatment-nav {
   padding-bottom: 131px;
+  overflow: hidden;
 }
 
 .treatment-nav .anim__background-mask {
@@ -16641,6 +16642,26 @@ iframe.uk-cover {
   font-size: 17px;
   line-height: 25px;
   color: #000000;
+}
+
+.treatment-article {
+  padding-bottom: 131px;
+  overflow: hidden;
+}
+
+.treatment-article .anim__background-mask {
+  top: -105px;
+  left: -140px;
+}
+
+.treatment-article .block__background-anim {
+  position: relative;
+}
+
+.treatment-article .block__background-anim .anim__bg-atom {
+  position: absolute;
+  top: -140px;
+  right: -220px;
 }
 
 .footer__content {
