@@ -61,7 +61,15 @@
     margin-bottom: 20px;
   }
 }
-
+.block__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #415466;
+  margin: 0;
+}
 // card
 .block__card {
   border-radius: 29px;
