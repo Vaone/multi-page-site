@@ -15631,6 +15631,14 @@ iframe.uk-cover {
   color: #fff;
 }
 
+.uk-offcanvas-close {
+  border-radius: 50%;
+  background: #fe5e7a;
+  border: none;
+  -webkit-box-shadow: 0 0 10px #fe5e796c;
+          box-shadow: 0 0 10px #fe5e796c;
+}
+
 .uk-offcanvas-bar {
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

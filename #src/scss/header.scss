@@ -87,6 +87,12 @@
   }
 }
 .uk-offcanvas {
+  &-close {
+    border-radius: 50%;
+    background: #fe5e7a;
+    border:none;
+    box-shadow: 0 0 10px #fe5e796c;
+  }
   &-bar {
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
