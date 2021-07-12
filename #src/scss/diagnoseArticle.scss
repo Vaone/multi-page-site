@@ -1,5 +1,5 @@
-// ta treatment-article
-.ta {
+// da diagnose article
+.da {
   padding-bottom: 131px;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
@@ -32,11 +32,9 @@
     font-size: 20px;
     line-height: 39px;
     color: #000000;
-
-    img {
-      border-radius: 23px;
-    }
   }
+
+  // anim
   & .anim__background-mask {
     top: -105px;
     left: -140px;
@@ -47,16 +45,6 @@
       position: absolute;
       top: -140px;
       right: -220px;
-    }
-  }
-
-  // Symptoms
-  &__symptoms {
-    margin-bottom: 67px;
-    p {
-      font-size: 20px;
-      line-height: 39px;
-      color: #000000;
     }
   }
 
@@ -93,7 +81,7 @@
   }
 
   // consultation
-  .ta__consult {
+  .da__consult {
     padding-bottom: 136px;
     &-card {
       font-family: "Poppins", sans-serif;
@@ -121,9 +109,3 @@
     }
   }
 }
-
-
-
-
-
-

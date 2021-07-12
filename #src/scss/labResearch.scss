@@ -1,0 +1,92 @@
+.lab-res {
+  padding-bottom: 131px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  .block__wrapper {
+    padding: 48px 52px 50px 52px;
+    margin-bottom: 67px;
+  }
+  .block__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #415466;
+  }
+  
+  &__content {
+    margin: 47px 0 20px 0;
+
+    font-size: 20px;
+    line-height: 39px;
+    color: #000000;
+  }
+  
+  &__advantages{
+    margin-top: 40px;
+    margin-bottom: 70px;
+    .adv{
+      &__card{
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        line-height: 160%;
+        letter-spacing: 0.004em;
+        color: #697883;
+        
+        padding: 28px 28px;
+        box-shadow: 5px 30px 30px rgba(125, 149, 169, 0.12);
+        border-radius: 15px;
+        &-icon{
+          margin-bottom: 15px;
+        }
+        &-title{
+          letter-spacing: 0.004em;
+          font-weight: 600;
+          font-size: 22px;
+          color: #2E2E46;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .block__card {
+    background:#F6F9FC;
+    &-title{
+      color: #171717;
+    }
+    &-price {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      border-radius: 8px;
+      width: 50%;
+      margin-right: 16px;
+
+      // white-space: pre-wrap;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 166.69%;
+      color: #000;
+    }
+  }
+
+  & .anim__background-mask {
+    top: -105px;
+    left: -140px;
+  }
+  & .anim__background-middle {
+    bottom: 500px;
+    left: -140px;
+    position: absolute;
+  }
+  & .block__background-anim {
+    position: relative;
+    & .anim__bg-atom {
+      position: absolute;
+      top: -140px;
+      right: -220px;
+    }
+  }
+}

@@ -87,6 +87,7 @@ window.onload = function () {
   const paralaxItem7 = document.querySelector('.experts__swiper-bg');
   const paralaxItem8 = document.querySelector('.anim__bg-atom');
   const paralaxItem9 = document.querySelector('.header__cursor');
+  const paralaxItem10 = document.querySelector('.anim__bg-middle');
   
   if (parallax) {
     const changer = 25;
@@ -130,6 +131,9 @@ window.onload = function () {
       };
       if (paralaxItem9) {
         paralaxItem9.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%);`;
+      };
+      if (paralaxItem10) {
+        paralaxItem10.style.cssText = `transform: translate(${positionX / changer2}%,${positionY / changer2}%);`;
       };
 
       requestAnimationFrame(setMousePrallaxStyle);

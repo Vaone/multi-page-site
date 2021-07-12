@@ -16500,6 +16500,10 @@ iframe.uk-cover {
   overflow: hidden;
 }
 
+.treatment-nav .block__card {
+  background: #F6F9FC;
+}
+
 .treatment-nav .anim__background-mask {
   top: -105px;
   left: -140px;
@@ -16609,7 +16613,7 @@ iframe.uk-cover {
   position: relative;
 }
 
-.questions .block__background-anim .anim__bg-pills {
+.questions .block__background-anim .anim__bg-atom {
   position: absolute;
   top: -30px;
   right: -100px;
@@ -16739,7 +16743,7 @@ iframe.uk-cover {
   color: #000000;
 }
 
-.lab__diag .block__tag {
+.ta .lab__diag .block__tag {
   position: absolute;
   top: 35px;
   right: 15px;
@@ -16747,7 +16751,7 @@ iframe.uk-cover {
           box-shadow: 0px 5px 15px rgba(236, 87, 115, 0.3);
 }
 
-.accordion__btns .btn {
+.ta .accordion__btns .btn {
   color: #ffffff;
   -webkit-box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
           box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
@@ -16755,45 +16759,265 @@ iframe.uk-cover {
   padding: 10px 19px;
 }
 
-.accordion__btns .btn:hover {
+.ta .accordion__btns .btn:hover {
   background: #0d1026;
   -webkit-box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
           box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
   color: #fff;
 }
 
-.uk-subnav-pill > .uk-active > a {
+.ta .uk-subnav-pill > .uk-active > a {
   background: #0d1026;
   -webkit-box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
           box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
   color: #fff;
 }
 
-.ta__consult-card {
+.ta .ta__consult {
+  padding-bottom: 136px;
+}
+
+.ta .ta__consult-card {
   font-family: "Poppins", sans-serif;
   padding: 28px 28px;
   border-radius: 12px;
   min-height: 90px;
 }
 
-.ta__consult-card-icon {
+.ta .ta__consult-card-icon {
   margin-right: 10px;
   min-width: 39px;
 }
 
-.ta__consult-card-title {
+.ta .ta__consult-card-title {
   font-weight: 600;
   font-size: 25px;
   line-height: 37px;
   color: #000000;
 }
 
-.ta__consult-card-text {
+.ta .ta__consult-card-text {
   font-size: 17px;
   line-height: 158.7%;
   letter-spacing: 0.12px;
   color: #363049;
   opacity: 0.7;
+}
+
+.da {
+  padding-bottom: 131px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.da .block__wrapper {
+  padding: 48px 52px 50px 52px;
+  margin-bottom: 67px;
+}
+
+.da .block__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: #415466;
+}
+
+.da .block___subtitle {
+  font-family: "Montserrat", sans-serif;
+}
+
+.da__tag {
+  -webkit-box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+          box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.da__content {
+  margin: 47px 0 20px 0;
+  font-size: 20px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.da .anim__background-mask {
+  top: -105px;
+  left: -140px;
+}
+
+.da .block__background-anim {
+  position: relative;
+}
+
+.da .block__background-anim .anim__bg-atom {
+  position: absolute;
+  top: -140px;
+  right: -220px;
+}
+
+.da .lab__diag .block__tag {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  -webkit-box-shadow: 0px 5px 15px rgba(236, 87, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(236, 87, 115, 0.3);
+}
+
+.da .accordion__btns .btn {
+  color: #ffffff;
+  -webkit-box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+          box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+  background: #fe5e7a;
+  padding: 10px 19px;
+}
+
+.da .accordion__btns .btn:hover {
+  background: #0d1026;
+  -webkit-box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+          box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+  color: #fff;
+}
+
+.da .uk-subnav-pill > .uk-active > a {
+  background: #0d1026;
+  -webkit-box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+          box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+  color: #fff;
+}
+
+.da .da__consult {
+  padding-bottom: 136px;
+}
+
+.da .da__consult-card {
+  font-family: "Poppins", sans-serif;
+  padding: 28px 28px;
+  border-radius: 12px;
+  min-height: 90px;
+}
+
+.da .da__consult-card-icon {
+  margin-right: 10px;
+  min-width: 39px;
+}
+
+.da .da__consult-card-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.da .da__consult-card-text {
+  font-size: 17px;
+  line-height: 158.7%;
+  letter-spacing: 0.12px;
+  color: #363049;
+  opacity: 0.7;
+}
+
+.lab-res {
+  padding-bottom: 131px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.lab-res .block__wrapper {
+  padding: 48px 52px 50px 52px;
+  margin-bottom: 67px;
+}
+
+.lab-res .block__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: #415466;
+}
+
+.lab-res__content {
+  margin: 47px 0 20px 0;
+  font-size: 20px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.lab-res__advantages {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.lab-res__advantages .adv__card {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.004em;
+  color: #697883;
+  padding: 28px 28px;
+  -webkit-box-shadow: 5px 30px 30px rgba(125, 149, 169, 0.12);
+          box-shadow: 5px 30px 30px rgba(125, 149, 169, 0.12);
+  border-radius: 15px;
+}
+
+.lab-res__advantages .adv__card-icon {
+  margin-bottom: 15px;
+}
+
+.lab-res__advantages .adv__card-title {
+  letter-spacing: 0.004em;
+  font-weight: 600;
+  font-size: 22px;
+  color: #2E2E46;
+  margin-bottom: 10px;
+}
+
+.lab-res .block__card {
+  background: #F6F9FC;
+}
+
+.lab-res .block__card-title {
+  color: #171717;
+}
+
+.lab-res .block__card-price {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  border-radius: 8px;
+  width: 50%;
+  margin-right: 16px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 166.69%;
+  color: #000;
+}
+
+.lab-res .anim__background-mask {
+  top: -105px;
+  left: -140px;
+}
+
+.lab-res .anim__background-middle {
+  bottom: 500px;
+  left: -140px;
+  position: absolute;
+}
+
+.lab-res .block__background-anim {
+  position: relative;
+}
+
+.lab-res .block__background-anim .anim__bg-atom {
+  position: absolute;
+  top: -140px;
+  right: -220px;
 }
 
 .footer__content {
@@ -18636,7 +18860,12 @@ iframe.uk-cover {
 }
 
 @media (max-width: 1280px) {
-  .lab__diag .block__tag {
+  .ta .lab__diag .block__tag {
+    top: -10px;
+    font-size: 16px;
+  }
+
+  .da .lab__diag .block__tag {
     top: -10px;
     font-size: 16px;
   }

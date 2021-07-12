@@ -1,6 +1,9 @@
 .treatment-nav {
   padding-bottom: 131px;
   overflow: hidden;
+  .block__card {
+    background: #F6F9FC;
+  }
   & .anim__background-mask {
     top: -105px;
     left: -140px;
