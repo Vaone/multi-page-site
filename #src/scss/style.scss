@@ -121,7 +121,19 @@
     }
   }
 }
+.block__tag {
+  background: #fe5e7a;
+  border-radius: 20px;
+  padding: 5px 10px;
 
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 166.69%;
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
 // ----------------accordion for------------------
 .accordion {
   &__btns {

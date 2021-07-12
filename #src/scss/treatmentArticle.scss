@@ -1,6 +1,34 @@
 .treatment-article {
   padding-bottom: 131px;
   overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  .block__wrapper {
+    padding: 48px 52px 50px 52px;
+    margin-bottom: 67px;
+  }
+  .block__title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #415466;
+  } 
+  
+  .block___subtitle {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__content {
+    margin: 47px 0 20px 0;
+
+    font-size: 20px;
+    line-height: 39px;
+    color: #000000;
+
+    img {
+      border-radius: 23px;
+    }
+  }
   & .anim__background-mask {
     top: -105px;
     left: -140px;
@@ -11,6 +39,16 @@
       position: absolute;
       top: -140px;
       right: -220px;
+    }
+  }
+
+  // Symptoms
+  &__symptoms {
+    margin-bottom: 67px;
+    p {
+      font-size: 20px;
+      line-height: 39px;
+      color: #000000;
     }
   }
 }

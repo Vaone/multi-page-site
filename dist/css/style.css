@@ -94,6 +94,20 @@
   background: #fe5e7a;
 }
 
+.block__tag {
+  background: #fe5e7a;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 166.69%;
+}
+
+.block__tag:not(:last-child) {
+  margin-right: 5px;
+}
+
 .accordion__btns > li {
   margin-top: 5px;
 }
@@ -16622,7 +16636,7 @@ iframe.uk-cover {
   background: #ffffff;
   -webkit-box-shadow: 0px 24px 113px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 24px 113px rgba(0, 0, 0, 0.3);
-  padding: 40px 25px 40px 25px;
+  padding: 40px 0 40px 0;
   border-radius: 12px;
   z-index: 1;
   position: absolute;
@@ -16657,6 +16671,35 @@ iframe.uk-cover {
 .treatment-article {
   padding-bottom: 131px;
   overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.treatment-article .block__wrapper {
+  padding: 48px 52px 50px 52px;
+  margin-bottom: 67px;
+}
+
+.treatment-article .block__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: #415466;
+}
+
+.treatment-article .block___subtitle {
+  font-family: "Montserrat", sans-serif;
+}
+
+.treatment-article__content {
+  margin: 47px 0 20px 0;
+  font-size: 20px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.treatment-article__content img {
+  border-radius: 23px;
 }
 
 .treatment-article .anim__background-mask {
@@ -16672,6 +16715,16 @@ iframe.uk-cover {
   position: absolute;
   top: -140px;
   right: -220px;
+}
+
+.treatment-article__symptoms {
+  margin-bottom: 67px;
+}
+
+.treatment-article__symptoms p {
+  font-size: 20px;
+  line-height: 39px;
+  color: #000000;
 }
 
 .footer__content {
@@ -18396,6 +18449,16 @@ iframe.uk-cover {
 
   .no-webp .intro .row__middleSection-Clm:last-child .row__middleSection-item{
     background: url("../img/Group.png") left no-repeat, url("../img/Atom.png") right center/200px no-repeat, #e6ebf0; }
+
+  .our-location__map .desc__map {
+    padding: 5px 0;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .our-location__map .desc__map-wrapper .cont__map {
+    padding-left: 20px;
+  }
 
   .footer__content-top > .right-side > .uk-nav:not(:last-child) {
     margin-right: 5vw;

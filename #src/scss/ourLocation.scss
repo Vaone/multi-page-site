@@ -23,12 +23,17 @@
       background: #ffffff;
       box-shadow: 0px 24px 113px rgba(0, 0, 0, 0.3);
 
-      padding: 40px 25px 40px 25px;
+      padding: 40px 0 40px 0;
       border-radius: 12px;
       z-index: 1;
       position: absolute;
       bottom: 64px;
       right: 47px;
+      @media (max-width: 1600px) {
+        padding: 5px 0;
+        right: 5px;
+        bottom: 5px;
+      }
       @media (max-width: 1023.9px) {
         padding: 20px;
         border-radius: 0 0 23px 23px;
@@ -43,6 +48,9 @@
         margin-left: 0;
         & .cont__map {
           font-family: "Poppins", sans-serif;
+          @media (max-width: 1600px) {
+            padding-left: 20px;
+          }
           &-icon {
             margin-right: 10px;
           }
@@ -57,6 +65,7 @@
 
             color: #000000;
           }
+          
         }
       }
     }
