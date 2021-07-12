@@ -108,6 +108,11 @@
   margin-right: 5px;
 }
 
+.block__map-wrapper {
+  border-radius: 23px;
+  overflow: hidden;
+}
+
 .accordion__btns > li {
   margin-top: 5px;
 }
@@ -136,7 +141,6 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 21px;
-  line-height: 130%;
   color: #1b1139;
 }
 
@@ -144,7 +148,7 @@
 .accordion__items-element .accordion__item-title:focus::before,
 .accordion__items-element .accordion__item-title:hover::before {
   float: left;
-  margin: 0 5px 0 0;
+  margin: 0 30px 0 0;
   background-image: url("../img/plus-icon.svg");
   background-size: contain;
 }
@@ -16668,18 +16672,18 @@ iframe.uk-cover {
   color: #000000;
 }
 
-.treatment-article {
+.ta {
   padding-bottom: 131px;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
 }
 
-.treatment-article .block__wrapper {
+.ta .block__wrapper {
   padding: 48px 52px 50px 52px;
   margin-bottom: 67px;
 }
 
-.treatment-article .block__title {
+.ta .block__title {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -16687,41 +16691,49 @@ iframe.uk-cover {
   color: #415466;
 }
 
-.treatment-article .block___subtitle {
+.ta .block___subtitle {
   font-family: "Montserrat", sans-serif;
 }
 
-.treatment-article__content {
+.ta__tag {
+  -webkit-box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+          box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.ta__content {
   margin: 47px 0 20px 0;
   font-size: 20px;
   line-height: 39px;
   color: #000000;
 }
 
-.treatment-article__content img {
+.ta__content img {
   border-radius: 23px;
 }
 
-.treatment-article .anim__background-mask {
+.ta .anim__background-mask {
   top: -105px;
   left: -140px;
 }
 
-.treatment-article .block__background-anim {
+.ta .block__background-anim {
   position: relative;
 }
 
-.treatment-article .block__background-anim .anim__bg-atom {
+.ta .block__background-anim .anim__bg-atom {
   position: absolute;
   top: -140px;
   right: -220px;
 }
 
-.treatment-article__symptoms {
+.ta__symptoms {
   margin-bottom: 67px;
 }
 
-.treatment-article__symptoms p {
+.ta__symptoms p {
   font-size: 20px;
   line-height: 39px;
   color: #000000;
@@ -16731,6 +16743,57 @@ iframe.uk-cover {
   position: absolute;
   top: 35px;
   right: 15px;
+  -webkit-box-shadow: 0px 5px 15px rgba(236, 87, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(236, 87, 115, 0.3);
+}
+
+.accordion__btns .btn {
+  color: #ffffff;
+  -webkit-box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+          box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
+  background: #fe5e7a;
+  padding: 10px 19px;
+}
+
+.accordion__btns .btn:hover {
+  background: #0d1026;
+  -webkit-box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+          box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+  color: #fff;
+}
+
+.uk-subnav-pill > .uk-active > a {
+  background: #0d1026;
+  -webkit-box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+          box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
+  color: #fff;
+}
+
+.ta__consult-card {
+  font-family: "Poppins", sans-serif;
+  padding: 28px 28px;
+  border-radius: 12px;
+  min-height: 90px;
+}
+
+.ta__consult-card-icon {
+  margin-right: 10px;
+  min-width: 39px;
+}
+
+.ta__consult-card-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.ta__consult-card-text {
+  font-size: 17px;
+  line-height: 158.7%;
+  letter-spacing: 0.12px;
+  color: #363049;
+  opacity: 0.7;
 }
 
 .footer__content {
@@ -18569,6 +18632,13 @@ iframe.uk-cover {
   .experts__swiper > .anim__background img {
     width: 19vw;
     height: 19vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .lab__diag .block__tag {
+    top: -10px;
+    font-size: 16px;
   }
 }
 
