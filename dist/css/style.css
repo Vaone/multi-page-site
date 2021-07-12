@@ -16727,6 +16727,12 @@ iframe.uk-cover {
   color: #000000;
 }
 
+.lab__diag .block__tag {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+}
+
 .footer__content {
   background: #FE5E7A;
   width: 100%;
