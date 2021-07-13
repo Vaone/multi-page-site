@@ -188,6 +188,9 @@
   position: absolute;
   top: -30px;
   left: 25%;
+  @media (max-width: 425px) {
+    display: none;
+  }
   @media (max-width: 768px) {
     top: -40px;
   }

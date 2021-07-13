@@ -136,7 +136,7 @@
 }
 
 .block__map-wrapper {
-  border-radius: 23px;
+  border-radius: 31px;
   overflow: hidden;
 }
 
@@ -355,6 +355,7 @@ header {
 @import "treatmentArticle";
 @import "diagnoseArticle";
 @import "labResearch";
+@import "treatmentLocation";
 @import "footer";
 
 // // анимация появления
