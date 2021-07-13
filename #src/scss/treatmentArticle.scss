@@ -1,6 +1,6 @@
 // ta treatment-article
 .ta {
-  padding-bottom: 131px;
+  // padding-bottom: 131px;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
   .block__wrapper {
@@ -113,6 +113,9 @@
     @media (max-width: 768px) {
       font-size: 16px;
     }
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
   }
   .accordion__items-element .accordion__item-title, .accordion__items-element .accordion__item-title:focus, .accordion__items-element .accordion__item-title:hover {
     @media (max-width: 425px) {
@@ -146,6 +149,9 @@
   // consultation
   .ta__consult {
     padding-bottom: 136px;
+    @media (max-width: 768px) {
+      padding-bottom: 50px;
+    }
     &-card {
       font-family: "Poppins", sans-serif;
 
