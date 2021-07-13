@@ -16683,7 +16683,7 @@ iframe.uk-cover {
 }
 
 .ta .block__wrapper {
-  padding: 48px 52px 50px 52px;
+  padding: 50px 52px 50px 52px;
   margin-bottom: 67px;
 }
 
@@ -16695,7 +16695,7 @@ iframe.uk-cover {
   color: #415466;
 }
 
-.ta .block___subtitle {
+.ta .block__subtitle {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -16705,6 +16705,7 @@ iframe.uk-cover {
   font-weight: 500;
   font-size: 18px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .ta__content {
@@ -16734,7 +16735,7 @@ iframe.uk-cover {
 }
 
 .ta__symptoms {
-  margin-bottom: 67px;
+  padding-bottom: 67px;
 }
 
 .ta__symptoms p {
@@ -19408,6 +19409,64 @@ iframe.uk-cover {
     height: 360px;
   }
 
+  .ta .block__wrapper {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .ta .block__title {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+
+  .ta .block__subtitle {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .ta__tag {
+    font-size: 14px;
+    line-height: 1.1;
+    margin-top: 5px;
+  }
+
+  .ta__content {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 20px 0 20px 0;
+  }
+
+  .ta__symptoms p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .ta .lab__diag .block__tag {
+    font-size: 14px;
+  }
+
+  .ta .accordion__items-element .accordion__item-content {
+    font-size: 16px;
+  }
+
+  .ta .accordion__btns .btn {
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .ta .ta__consult-card {
+    padding: 15px 15px;
+  }
+
+  .ta .ta__consult-card-title {
+    font-size: 18px;
+  }
+
+  .ta .ta__consult-card-text {
+    font-size: 14px;
+  }
+
   .footer__content-bottom img {
     width: 169px;
     top: -10px;
@@ -19518,6 +19577,20 @@ iframe.uk-cover {
   .accordion__items-element .accordion__item-title:focus,
   .accordion__items-element .accordion__item-title:hover {
     font-size: 15px;
+  }
+
+  .ta__content {
+    font-size: 14px;
+  }
+
+  .ta__symptoms p {
+    font-size: 14px;
+  }
+
+  .ta .accordion__items-element .accordion__item-title,
+  .ta .accordion__items-element .accordion__item-title:focus,
+  .ta .accordion__items-element .accordion__item-title:hover {
+    font-size: 14px;
   }
 }
 

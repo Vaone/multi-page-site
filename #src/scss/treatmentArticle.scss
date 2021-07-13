@@ -4,8 +4,11 @@
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
   .block__wrapper {
-    padding: 48px 52px 50px 52px;
+    padding: 50px 52px 50px 52px;
     margin-bottom: 67px;
+    @media (max-width: 768px) {
+      padding: 20px 30px 20px 30px;
+    }
   }
   .block__title {
     font-family: "Montserrat", sans-serif;
@@ -13,10 +16,19 @@
     font-size: 40px;
     line-height: 49px;
     color: #415466;
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
   }
 
-  .block___subtitle {
+  .block__subtitle {
     font-family: "Montserrat", sans-serif;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 1.1;
+    }
   }
 
   &__tag {
@@ -24,6 +36,12 @@
     font-weight: 500;
     font-size: 18px;
     margin-top: 20px;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 1.1;
+      margin-top: 5px;
+    }
   }
 
   &__content {
@@ -32,7 +50,14 @@
     font-size: 20px;
     line-height: 39px;
     color: #000000;
-
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 1.2;
+      margin: 20px 0 20px 0;
+    }
     img {
       border-radius: 23px;
     }
@@ -52,11 +77,18 @@
 
   // Symptoms
   &__symptoms {
-    margin-bottom: 67px;
+    padding-bottom: 67px;
     p {
       font-size: 20px;
       line-height: 39px;
       color: #000000;
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+      @media (max-width: 425px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -71,6 +103,20 @@
         top: -10px;
         font-size: 16px;
       }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+  // accordion
+  .accordion__items-element .accordion__item-content {
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .accordion__items-element .accordion__item-title, .accordion__items-element .accordion__item-title:focus, .accordion__items-element .accordion__item-title:hover {
+    @media (max-width: 425px) {
+      font-size: 14px;
     }
   }
 
@@ -80,6 +126,11 @@
     box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
     background: #fe5e7a;
     padding: 10px 19px;
+    @media (max-width: 768px) {
+      padding: 8px 10px;
+      font-size: 12px;
+      line-height: 1.1;
+    }
     &:hover {
       background: #0d1026;
       box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
@@ -101,6 +152,9 @@
       padding: 28px 28px;
       border-radius: 12px;
       min-height: 90px;
+      @media (max-width: 768px) {
+        padding: 15px 15px;
+      }
       &-icon {
         margin-right: 10px;
         min-width: 39px;
@@ -110,6 +164,9 @@
         font-size: 25px;
         line-height: 37px;
         color: #000000;
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
       }
       &-text {
         font-size: 17px;
@@ -117,6 +174,9 @@
         letter-spacing: 0.12px;
         color: #363049;
         opacity: 0.7;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
       }
     }
   }
