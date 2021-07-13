@@ -16230,6 +16230,7 @@ iframe.uk-cover {
 .form__input-sended._sended {
   opacity: 1;
   font-size: 19px;
+  line-height: 1.1;
 }
 
 .form__input-error {
@@ -16991,13 +16992,16 @@ iframe.uk-cover {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 10px;
+  padding-right: 10px;
   border-radius: 8px;
-  width: 50%;
+  margin-right: 16px;
   white-space: nowrap;
   font-weight: 600;
   font-size: 21px;
   line-height: 166.69%;
   color: #000;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .lab-res .block__card-pagination {
@@ -18731,6 +18735,25 @@ iframe.uk-cover {
   }
 }
 
+@media (max-width: 1700px) {
+  .lab-res .block__card-prices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .lab-res .block__card-price {
+    margin-right: 0;
+  }
+
+  .lab-res .block__card .btn {
+    padding: 7px;
+    line-height: 1.1;
+    margin-top: 15px;
+  }
+}
+
 @media (max-width: 1658px) {
   .intro .row__topSection-secondClm > .row__topSection-item:first-child > .row__topSection-item-content > h1 {
     font-size: 13vw;
@@ -19144,6 +19167,10 @@ iframe.uk-cover {
     bottom: -330px;
   }
 
+  .lab-res .block__card .btn {
+    font-size: 16px;
+  }
+
   .footer__content-top {
     height: auto;
   }
@@ -19436,9 +19463,14 @@ iframe.uk-cover {
     font-size: 20px;
   }
 
+  .form__btn {
+    font-size: 16px;
+  }
+
   .form__input-sended._sended {
     font-size: 16px;
     margin-bottom: 0;
+    line-height: 1;
   }
 
   .form__input-error._error {
@@ -19636,12 +19668,6 @@ iframe.uk-cover {
     font-size: 16px;
     line-height: 1.2;
     margin: 20px 0 20px 0;
-  }
-
-  .lab-res .btn {
-    padding: 8px 10px;
-    font-size: 12px;
-    line-height: 1.1;
   }
 
   .lab-res__advantages .adv__card {
@@ -19848,6 +19874,19 @@ iframe.uk-cover {
 
   .lab-res__content {
     font-size: 14px;
+  }
+
+  .lab-res .btn {
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 7px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

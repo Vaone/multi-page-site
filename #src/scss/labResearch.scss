@@ -36,13 +36,7 @@
       margin: 20px 0 20px 0;
     }
   }
-  .btn {
-    @media (max-width: 768px) {
-      padding: 8px 10px;
-      font-size: 12px;
-      line-height: 1.1;
-    }
-  }
+  
   &__advantages{
     margin-top: 40px;
     margin-bottom: 70px;
@@ -78,27 +72,59 @@
       }
     }
   }
-
+  .btn {
+    @media (max-width: 425px) {
+      font-size: 14px;
+      line-height: 1.1;
+      padding: 7px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  }
   .block__card {
     background:#F6F9FC;
     &-title{
       color: #171717;
     }
+    &-prices {
+      @media (max-width: 1700px) {
+        flex-direction: column;
+      }
+    }
+    
     &-price {
       background: #fff;
       display: flex;
       align-items: center;
       padding-left: 10px;
+      padding-right: 10px;
       border-radius: 8px;
-      width: 50%;
-      // margin-right: 16px;
+      margin-right: 16px;
 
       white-space: nowrap;
       font-weight: 600;
       font-size: 21px;
       line-height: 166.69%;
       color: #000;
+
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+      @media (max-width: 1700px) {
+        margin-right: 0;
+      }
     }
+
+    .btn {
+      @media (max-width: 1700px) {
+        padding: 7px;
+        line-height: 1.1;
+        margin-top: 15px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
+    }
+
     &-pagination {
       margin-top: 20px;
     }
