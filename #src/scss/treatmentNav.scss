@@ -8,7 +8,8 @@
     background: #F6F9FC;
     box-shadow: none;
     img {
-      height: 361px;
+      max-width: 100%;
+      height: auto;
     }
   }
   & .anim__background-mask {

@@ -16529,7 +16529,8 @@ iframe.uk-cover {
 }
 
 .treatment-nav .block__card img {
-  height: 361px;
+  max-width: 100%;
+  height: auto;
 }
 
 .treatment-nav .anim__background-mask {
