@@ -109,7 +109,6 @@
     background: #ffffff;
     border-radius: 8px;
     height: 70px;
-    margin-right: 10px;
 
     font-family: "DM Sans", sans-serif;
     font-style: normal;
@@ -216,6 +215,10 @@
 // }
 .form__input-tel, .form__input-name {
   position: relative;
+  margin-right: 30px;
+  @media (max-width: 1366.5px) {
+    margin-right: 0;
+  }
 }
 .form__input-sended {
   text-align: center;
@@ -239,23 +242,30 @@
 .form__input-error {
   background: #333;
   border-radius: 12px;
-  color: #fff;
 
   transition: opacity 0.3s linear;
   opacity: 0;
   font-size: 0;
-  
+  color: #fff;
+  line-height: 1;
+
   position: absolute;
-  top: -18px;
-  right: 30px;
-  padding: 0 5px;
+  top: -40px;
+  left: 0px;
+  padding: 5px 8px;
+
+  white-space: nowrap;
+  @media (max-width: 1366.5px) {
+    top: -11px;
+    white-space: initial;
+  }
 }
 .form__input-error._error{
-  font-size: 20px;
+  font-size: 15px;
   opacity: 1;
   @media (max-width: 768px) {
-    font-size: 14px;
-    line-height: 1.3;
-    top: -7px
+    font-size: 12px;
+    top: -7px;
+    padding: 3px 5px;
   }
 }
