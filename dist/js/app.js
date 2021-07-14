@@ -5202,7 +5202,8 @@ const Experts = new Swiper(".experts__swiper-slider", {
 })));
 //# sourceMappingURL=imask.js.map;
 // pop-up form sended observer
-let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+if (document.querySelector('.form')) {
+  let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
   let popup = document.querySelector('.form__content-notifications');
   let observer = new MutationObserver(function(mutations) {  
     mutations.forEach(function(mutation) {
@@ -5219,6 +5220,16 @@ let MutationObserver = window.MutationObserver || window.WebKitMutationObserver 
   observer.observe(popup, {
   	attributes: true, 
    });
+  
+   //close btn 
+  let close = document.querySelector('.form__input-sended-btn');
+  close.addEventListener('click', ()=>{
+    popup.classList.remove('_sended');
+  })
+}
+
+
+
 
 
 // маска на телефон формы

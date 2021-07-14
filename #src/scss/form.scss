@@ -259,17 +259,20 @@
     margin-bottom: 0;
     line-height: 1;
   }
-  // &._sended {
-  //   transform: translate(-50%, -50%);
-  //   opacity: 1;
-  //   font-size: 19px;
-  //   line-height: 1.1;
-  //   @media (max-width: 768px) {
-  //     font-size: 16px;
-  //     margin-bottom: 0;
-  //     line-height: 1;
-  //   }
-  // }
+
+  &-btn {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: none;
+    -webkit-box-shadow: 0 0 10px #fe5e796c;
+    box-shadow: 0 0 10px #fe5e796c;
+    cursor: pointer;
+  }
 }
 .form__input-error {
   background: #333;
