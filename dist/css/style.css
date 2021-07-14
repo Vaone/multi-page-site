@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body._lock {
+  overflow-y: hidden;
+}
+
 ._swiper {
   overflow: hidden;
 }
@@ -16216,9 +16220,34 @@ iframe.uk-cover {
   margin-right: 30px;
 }
 
+.form__content-notifications {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-1000px);
+      -ms-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 11;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+}
+
+.form__content-notifications._sended {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .form__input-sended {
-  text-align: center;
-  color: #fff;
   background: rgba(31, 179, 122, 0.88);
   border-radius: 10px;
   padding: 20px;
@@ -16234,29 +16263,17 @@ iframe.uk-cover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.5s linear;
-  transition: opacity 0.3s linear, -webkit-transform 0.5s linear;
-  -o-transition: opacity 0.3s linear, transform 0.5s linear;
-  transition: opacity 0.3s linear, transform 0.5s linear;
-  transition: opacity 0.3s linear, transform 0.5s linear, -webkit-transform 0.5s linear;
-  -webkit-transform: translate(-100px, 0);
-      -ms-transform: translate(-100px, 0);
-          transform: translate(-100px, 0);
-  opacity: 0;
-  font-size: 0;
-  z-index: 1;
+  text-align: center;
+  color: #fff;
   position: absolute;
-  bottom: -30px;
+  top: 50%;
   left: 50%;
   right: 50%;
-}
-
-.form__input-sended._sended {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 1;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.1;
 }
 
@@ -19757,7 +19774,7 @@ iframe.uk-cover {
     font-size: 16px;
   }
 
-  .form__input-sended._sended {
+  .form__input-sended {
     font-size: 16px;
     margin-bottom: 0;
     line-height: 1;

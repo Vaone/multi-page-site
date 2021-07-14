@@ -12,6 +12,10 @@
 // $thirdColor: #116868;
 // $thirdTr: #11d8ff24;
 
+body._lock {
+  overflow-y: hidden;
+}
+
 //swiper
 ._swiper {
   overflow: hidden;

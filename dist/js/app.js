@@ -5201,6 +5201,26 @@ const Experts = new Swiper(".experts__swiper-slider", {
 
 })));
 //# sourceMappingURL=imask.js.map;
+// pop-up form sended observer
+let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+  let popup = document.querySelector('.form__content-notifications');
+  let observer = new MutationObserver(function(mutations) {  
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes') {
+        if (popup.classList.contains('_sended')) {
+          document.body.classList.add('_lock');
+        } else {
+          document.body.classList.remove('_lock')
+        }
+      }
+    });
+  });
+ 
+  observer.observe(popup, {
+  	attributes: true, 
+   });
+
+
 // маска на телефон формы
 const tel = document.querySelector('#tel');
 var maskOptions = {
@@ -5356,23 +5376,6 @@ window.onload = function () {
   }
 }
 
-
-
-
-// function validateForm (selector, rules) {
-//   new window.JustValidate(selector, {
-//     rules: rules,
-//     submitHandler: function (form, values, ajax) {
-//       console.log(form);
-
-//       // let formData = new FormData(form);
-
-      
-//     }
-//   })
-// }
-
-// validateForm('.form__fields', {name: {required: true}, tel: {required: true}})
 
 
 // // scrollSpy для шапки
