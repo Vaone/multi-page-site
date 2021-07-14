@@ -19037,6 +19037,24 @@ iframe.uk-cover {
   .experts__swiper-content {
     width: 250px;
   }
+
+  .treatment-nav .uk-grid > * {
+    padding-left: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .treatment-nav * + .uk-grid-margin {
+    margin-top: 15px;
+  }
+
+  .treatment-nav .block__card {
+    padding: 30px;
+  }
 }
 
 @media (max-width: 1367px) {
@@ -20006,6 +20024,16 @@ iframe.uk-cover {
 
   .uk-visible\@s {
     display: none !important;
+  }
+}
+
+@media (max-width: 639.5px) {
+  .treatment-nav .block__card {
+    width: 500px;
+  }
+
+  .treatment-nav .block__card img {
+    max-height: 300px;
   }
 }
 
