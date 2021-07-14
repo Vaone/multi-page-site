@@ -223,23 +223,29 @@
 .form__input-sended {
   text-align: center;
   color: #fff;
+  background: rgba(31, 179, 122, 0.88);
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 400px;
+  min-height: 200px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   transition: opacity 0.3s linear, transform 0.5s linear;
-  transform: translateX(-1000px);
+  transform: translate(-100px, 0);
   opacity: 0;
   font-size: 0;
   z-index: 1;
+  
   position: absolute;
-  bottom: 30px;
-  left: 35%;
-  right: 35%;
-
-  background: rgba(31,179,138, .7);
-  border-radius: 10px;
-  padding: 5px;
+  bottom: -30px;
+  left: 50%;
+  right: 50%;
 }
 .form__input-sended._sended {
-  transform: translateX(0);
+  transform: translate(-50%, -50%);
   opacity: 1;
   font-size: 19px;
   line-height: 1.1;
@@ -247,7 +253,6 @@
     font-size: 16px;
     margin-bottom: 0;
     line-height: 1;
-
   }
 }
 .form__input-error {
