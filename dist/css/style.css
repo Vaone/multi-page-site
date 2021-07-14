@@ -16220,14 +16220,30 @@ iframe.uk-cover {
   text-align: center;
   color: #fff;
   margin-bottom: 10px;
-  -webkit-transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.5s linear;
+  transition: opacity 0.3s linear, -webkit-transform 0.5s linear;
+  -o-transition: opacity 0.3s linear, transform 0.5s linear;
+  transition: opacity 0.3s linear, transform 0.5s linear;
+  transition: opacity 0.3s linear, transform 0.5s linear, -webkit-transform 0.5s linear;
+  -webkit-transform: translateX(-1000px);
+      -ms-transform: translateX(-1000px);
+          transform: translateX(-1000px);
   opacity: 0;
   font-size: 0;
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  left: 35%;
+  right: 35%;
+  background: rgba(31, 179, 138, 0.7);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .form__input-sended._sended {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
   opacity: 1;
   font-size: 19px;
   line-height: 1.1;
