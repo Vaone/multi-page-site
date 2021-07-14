@@ -7,6 +7,9 @@
   .block__card {
     background: #F6F9FC;
     box-shadow: none;
+    img {
+      height: 361px;
+    }
   }
   & .anim__background-mask {
     top: -105px;

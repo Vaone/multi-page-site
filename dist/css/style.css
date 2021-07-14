@@ -16528,6 +16528,10 @@ iframe.uk-cover {
           box-shadow: none;
 }
 
+.treatment-nav .block__card img {
+  height: 361px;
+}
+
 .treatment-nav .anim__background-mask {
   top: -105px;
   left: -140px;
