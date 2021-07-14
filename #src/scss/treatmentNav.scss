@@ -1,6 +1,12 @@
 .treatment-nav {
   padding-bottom: 131px;
   overflow: hidden;
+  .uk-grid {
+    margin-left: -25px;
+    @media (max-width:1440px) {
+      margin-left: -15px;
+    }
+  }
   .uk-grid>* {
     padding-left: 25px;
     @media (max-width:1440px) {

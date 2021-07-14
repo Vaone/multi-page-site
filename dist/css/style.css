@@ -16578,6 +16578,10 @@ iframe.uk-cover {
   overflow: hidden;
 }
 
+.treatment-nav .uk-grid {
+  margin-left: -25px;
+}
+
 .treatment-nav .uk-grid > * {
   padding-left: 25px;
 }
@@ -19102,6 +19106,10 @@ iframe.uk-cover {
 
   .experts__swiper-content {
     width: 250px;
+  }
+
+  .treatment-nav .uk-grid {
+    margin-left: -15px;
   }
 
   .treatment-nav .uk-grid > * {
