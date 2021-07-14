@@ -1,8 +1,12 @@
 .treatment-nav {
   padding-bottom: 131px;
   overflow: hidden;
+  .uk-grid>* {
+    padding-left: 36px;
+  }
   .block__card {
     background: #F6F9FC;
+    box-shadow: none;
   }
   & .anim__background-mask {
     top: -105px;

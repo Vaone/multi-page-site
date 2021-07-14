@@ -16518,8 +16518,14 @@ iframe.uk-cover {
   overflow: hidden;
 }
 
+.treatment-nav .uk-grid > * {
+  padding-left: 36px;
+}
+
 .treatment-nav .block__card {
   background: #F6F9FC;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .treatment-nav .anim__background-mask {
