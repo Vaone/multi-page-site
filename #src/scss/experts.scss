@@ -33,9 +33,13 @@
   }
 
   &-slide {
+    width: 320px!important;
+    @media (max-width: 1440px) {
+      width: 250px!important;
+    }
     & > .uk-card {
       height: 491px;
-      padding: 33px 10px 11px 10px;
+      padding: 15px 10px 11px 10px;
       border-radius: 24px;
       background: #e7efff;
       display: flex;
@@ -45,7 +49,17 @@
       @media (max-width: 768px) {
         height: auto;
       }
-      
+
+      img {
+        box-sizing: border-box;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        @media (max-width: 768px) {
+          width: 200px;
+          height: 200px;
+        }
+      }
     }
   }
 
@@ -53,9 +67,9 @@
     padding: 25px 30px;
     border-radius: 24px;
     background: #fff;
-    width: 300px;
+    // width: 300px;
     height: 200px;
-    margin-top: 31px;
+    margin-top: 20px;
 
     font-family: "Gilroy", sans-serif;
     font-weight: 500;
@@ -63,6 +77,10 @@
     line-height: 99.33%;
 
     color: #3a62b4;
+    @media (max-width: 1440px) {
+      // padding: 15px 15px;
+      width: 250px;
+    }
     @media (max-width: 768px) {
       font-size: 16px;
       line-height: 1;

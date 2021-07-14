@@ -130,6 +130,21 @@
     }
   }
 
+  &__statistics {
+    // min-height: 255px;
+    // background: #FD9790;
+    // width: 106.5%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // position: relative;
+    // top: 0;
+    // left: -52px;
+    @media (max-width: 768px) {
+      left: -30px;
+    }
+  }
+
   &__principles {
     background: #fff;
   }

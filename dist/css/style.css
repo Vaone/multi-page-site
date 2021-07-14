@@ -16278,6 +16278,7 @@ iframe.uk-cover {
 
 .news__swiper-slide {
   opacity: 0.2;
+  width: 400px !important;
 }
 
 .news__swiper-slide > .uk-card {
@@ -16316,6 +16317,12 @@ iframe.uk-cover {
   margin-top: 32px;
   text-align: center;
   color: #7D7E86;
+}
+
+.news__swiper-slide > .uk-card img {
+  width: 340px;
+  height: 360px;
+  border-radius: 15px;
 }
 
 .swiper-slide-next,
@@ -16372,9 +16379,13 @@ iframe.uk-cover {
   padding-bottom: 25px;
 }
 
+.experts__swiper-slide {
+  width: 320px !important;
+}
+
 .experts__swiper-slide > .uk-card {
   height: 491px;
-  padding: 33px 10px 11px 10px;
+  padding: 15px 10px 11px 10px;
   border-radius: 24px;
   background: #e7efff;
   display: -webkit-box;
@@ -16392,13 +16403,20 @@ iframe.uk-cover {
           align-items: center;
 }
 
+.experts__swiper-slide > .uk-card img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
 .experts__swiper-content {
   padding: 25px 30px;
   border-radius: 24px;
   background: #fff;
-  width: 300px;
   height: 200px;
-  margin-top: 31px;
+  margin-top: 20px;
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
   font-size: 17px;
@@ -19000,6 +19018,16 @@ iframe.uk-cover {
   }
 }
 
+@media (max-width: 1440px) {
+  .experts__swiper-slide {
+    width: 250px !important;
+  }
+
+  .experts__swiper-content {
+    width: 250px;
+  }
+}
+
 @media (max-width: 1367px) {
   .uk-navbar-right > .uk-navbar-nav > li > a {
     height: 43px;
@@ -19676,6 +19704,10 @@ iframe.uk-cover {
     line-height: 1.2;
   }
 
+  .news__swiper-slide {
+    width: 327px !important;
+  }
+
   .news__swiper-slide > .uk-card {
     height: auto;
   }
@@ -19690,6 +19722,11 @@ iframe.uk-cover {
     margin-top: 20px;
   }
 
+  .news__swiper-slide > .uk-card img {
+    width: auto;
+    height: 280px;
+  }
+
   .news__swiper-pagination {
     bottom: 0;
   }
@@ -19701,6 +19738,11 @@ iframe.uk-cover {
 
   .experts__swiper-slide > .uk-card {
     height: auto;
+  }
+
+  .experts__swiper-slide > .uk-card img {
+    width: 200px;
+    height: 200px;
   }
 
   .experts__swiper-content {
@@ -19899,6 +19941,10 @@ iframe.uk-cover {
 
   .our-lab__specialization .our-lab__specs .card-spec {
     padding: 15px 10px;
+  }
+
+  .our-lab__statistics {
+    left: -30px;
   }
 
   .footer__content-bottom img {
