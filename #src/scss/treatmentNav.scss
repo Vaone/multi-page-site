@@ -2,14 +2,17 @@
   padding-bottom: 131px;
   overflow: hidden;
   .uk-grid>* {
-    padding-left: 36px;
+    padding-left: 25px;
     @media (max-width:1440px) {
-      padding-left: 25px;
+      padding-left: 15px;
       display: flex;
       justify-content: center;
     }
   }
   *+.uk-grid-margin {
+    @media (min-width: 1200px) {
+      margin-top: 25px;
+    }
     @media (max-width:1440px) {
       margin-top: 15px;
     }
@@ -17,13 +20,12 @@
   .block__card {
     background: #F6F9FC;
     box-shadow: none;
+    padding: 20px 20px 35px 20px;
     @media (max-width: 639.5px) {
       width: 500px;
     }
-    @media (max-width:1440px) {
-      padding: 30px;
-    }
     img {
+      border-radius: 20px;
       max-width: 100%;
       height: auto;
       @media (max-width: 639.5px) {
