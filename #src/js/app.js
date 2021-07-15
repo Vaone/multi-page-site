@@ -4,5 +4,6 @@
 @@include('swiper.min.js');
 @@include('slider.js');
 @@include('input-mask.js');
+@@include('scrollOnclick.js');
 @@include('script.js');
 

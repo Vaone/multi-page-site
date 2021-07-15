@@ -16794,12 +16794,18 @@ iframe.uk-cover {
 }
 
 .ta__tag {
+  margin-top: 20px;
   -webkit-box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
           box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
   font-weight: 500;
   font-size: 18px;
-  margin-top: 20px;
   text-align: center;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  -o-transition: transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
 }
 
 .ta__content {
@@ -18215,6 +18221,14 @@ iframe.uk-cover {
 @media (min-width: 1025px) {
   .footer__content-top > .right-side > .uk-nav > .uk-parent > .uk-nav-sub {
     padding: 0;
+  }
+}
+
+@media (min-width: 1199.5px) {
+  .ta__tag:hover {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
 }
 

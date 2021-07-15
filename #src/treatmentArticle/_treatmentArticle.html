@@ -8,10 +8,10 @@
           <h2 class="ta__subtitle block__subtitle uk-margin-small">Как вылечить рак</h2>
           <h1 class="ta__title block__title uk-margin-small">Лечение "Наименование заболевания"</h1>
           <div class="ta__tags block__tags uk-flex uk-flex-center uk-flex-wrap">
-            <div class="ta__tag block__tag">#симптомы</div>
-            <div class="ta__tag block__tag">#как диагностировать</div>
-            <div class="ta__tag block__tag">#как лечить</div>
-            <div class="ta__tag block__tag">#к кому обращаться</div>
+            <div data-goto=".ta__symptoms" class="ta__tag block__tag">#симптомы</div>
+            <div data-goto=".ta__lab-diag" class="ta__tag block__tag">#как диагностировать</div>
+            <div data-goto=".ta__treatment" class="ta__tag block__tag">#как лечить</div>
+            <div data-goto=".ta__title-map" class="ta__tag block__tag">#к кому обращаться</div>
           </div>
           <!-- background pictures -->
           <div class="anim__background anim-bg2">
@@ -42,8 +42,8 @@
   <!-- Sypmtoms -->
   <section class="ta__symptoms">
     <div class="uk-container uk-container-center ta__container">
-      <div uk-filter="target: .js-filter" class="accordion treatment-article__symptoms">
-          <h1 class="treatment-article__title block__title">Симптомы</h1>
+      <div uk-filter="target: .js-filter" class="accordion ta__symptoms">
+          <h1 class="ta__title block__title">Симптомы</h1>
           <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@m uk-text-center accordion__items-container" uk-grid="masonry: true">
             <li class="accordion__items-element">
               <div class="uk-card uk-card-default uk-card-body accordion__item-card">
@@ -119,7 +119,7 @@
     <div class="uk-container uk-container-center ta__container">
       <div class="lab__diag block__wrapper uk-width-1-1">
       <!-- Container title -->
-        <h1 class="treatment-article__title block__title">Лабораторная диагностика</h1>
+        <h1 class="ta__title block__title">Лабораторная диагностика</h1>
         <div uk-filter="target: .js-filter" class="accordion">
             <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@m uk-text-center accordion__items-container" uk-grid="masonry: true">
               <li class="accordion__items-element">
@@ -208,7 +208,7 @@
     <div class="uk-container uk-container-center ta__container">
       <div class="block__wrapper uk-width-1-1">
           <!-- Container title -->
-          <h1 class="treatment-article__title block__title">Лечение</h1>
+          <h1 class="ta__title block__title">Лечение</h1>
           <!-- background pictures -->
           <div class="anim__background anim-bg2">
             <div class="anim__background-mask">
@@ -222,7 +222,7 @@
           </p>
             
         
-          <h1 class="treatment-article__title block__title">К кому обращаться за лечением?</h1>
+          <h1 class="ta__title-map block__title ">К кому обращаться за лечением?</h1>
           <div class="block__map-wrapper">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A64c297f7e35b8dae3bb81cb67c45ae1923f5314b80559a304bcb95095c74d368&amp;width=100%25&amp;height=548px&amp;lang=ru_RU&amp;scroll=false"></script>
           </div>
@@ -235,7 +235,7 @@
     <div class="uk-container uk-container-center ta__container">
       <div class="block__wrapper uk-width-1-1">
       <!-- Container title -->
-      <h1 class="treatment-article__title block__title">Часто задаваемые вопросы</h1>
+      <h1 class="ta__title block__title">Часто задаваемые вопросы</h1>
       <div uk-filter="target: .js-filter" class="accordion">
 
         <ul class="accordion__btns questions__theme-nav uk-subnav uk-subnav-pill uk-flex uk-flex-center">
