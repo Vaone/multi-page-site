@@ -1,6 +1,7 @@
 .lab-res {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  // position: relative;
   .block__wrapper {
     padding: 48px 52px 50px 52px;
     margin-bottom: 67px;
@@ -167,7 +168,7 @@
     }
     &__close {
       position: absolute;
-      z-index: 1000;
+      z-index: 1;
       top: 20px;
       right: 20px;
       padding: 5px;
@@ -179,29 +180,7 @@
       cursor: pointer;
     }
     &__wrapper {
-      // position: absolute;
-      top: 50%;
-      left: 50%;
-      right: 50%;
-
-      transform: translate(-50%, 20%);
-    }
-    &__background-arm {
-      left: -105px;
-      bottom: -510px;
-      @media (max-width: 480px) {
-        bottom: -170px;
-        left: -70px;
-      }
-      @media (max-width: 720px) {
-        bottom: -305px;
-      }
-      @media (max-width: 1024px) {
-        bottom: -440px;
-      }
-      @media (max-width: 1366px) {
-        bottom: -550px;
-      }
+      transform: translateY(75px);
     }
   }
 

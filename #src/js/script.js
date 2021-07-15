@@ -1,30 +1,38 @@
 // pop-up form sended observer
 if (document.querySelector('.form')) {
   let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
-  let popup = document.querySelector('.form__content-notifications');
-  let observer = new MutationObserver(function(mutations) {  
-    mutations.forEach(function(mutation) {
-      if (mutation.type === 'attributes') {
-        if (popup.classList.contains('_sended')) {
-          document.body.classList.add('_lock');
-        } else {
-          document.body.classList.remove('_lock')
+  let popups = document.querySelectorAll('.form__notification');
+  for (let i=0; i<popups.length; i++) {
+    let popup = popups[i];
+    let observer = new MutationObserver(function(mutations) {  
+      mutations.forEach(function(mutation) {
+        if (mutation.type === 'attributes') {
+          if (popup.classList.contains('_show')) {
+            document.body.classList.add('_lock');
+            document.querySelector('.form').classList.add('_lock');
+          } else {
+            document.body.classList.remove('_lock')
+            document.querySelector('.form').classList.remove('_lock');
+          }
         }
-      }
+      });
     });
-  });
- 
-  observer.observe(popup, {
-  	attributes: true, 
-   });
-  
-   //close btn 
-  let close = document.querySelector('.form__input-sended-btn');
-  if (close) {
-    close.addEventListener('click', ()=>{
-      popup.classList.remove('_sended');
+
+    observer.observe(popup, {
+      attributes: true, 
     });
-  }
+
+    //close btn 
+    let closeBtns = document.querySelectorAll('.form__notification-close-btn');
+    for (let i=0; i<closeBtns.length; i++) {
+      let closeBtn = closeBtns[i];
+      if (closeBtn) {
+        closeBtn.addEventListener('click', ()=>{
+          popup.classList.remove('_show');
+        });
+      };
+    };
+  };
 }
 
 // popup form
@@ -36,12 +44,14 @@ if (document.querySelector('.form__open')) {
     btnFormOpen.addEventListener('click', () => {
       form.classList.add('_visible');
       document.body.classList.add('_lock');
+      // document.querySelector('.form').classList.add("_lock");
     });
   }
   if (btnFormClose) {
     btnFormClose.addEventListener('click', () => {
       form.classList.remove('_visible');
       document.body.classList.remove('_lock');
+      // document.querySelector('.form').classList.remove("_lock");
     })
   }
 }

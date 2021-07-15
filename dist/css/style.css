@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-body._lock {
-  overflow-y: hidden;
+body._lock,
+.form._lock {
+  overflow-y: hidden !important;
 }
 
 ._swiper {
@@ -16075,7 +16076,6 @@ iframe.uk-cover {
   background: #fe5e7a;
   -webkit-box-shadow: 0 5px 30px #fe5e7a;
           box-shadow: 0 5px 30px #fe5e7a;
-  position: relative;
 }
 
 .no-webp .form__background{
@@ -16175,6 +16175,34 @@ iframe.uk-cover {
   color: #000;
 }
 
+.form__input-tel,
+.form__input-name {
+  position: relative;
+  margin-right: 30px;
+}
+
+.form__input-error {
+  background: #333;
+  border-radius: 12px;
+  -webkit-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  font-size: 0;
+  color: #fff;
+  line-height: 1;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  padding: 5px 8px;
+  white-space: nowrap;
+}
+
+.form__input-error._error {
+  font-size: 15px;
+  opacity: 1;
+}
+
 .form__btn {
   background: #0d1026;
   border-radius: 8px;
@@ -16214,13 +16242,7 @@ iframe.uk-cover {
   bottom: -510px;
 }
 
-.form__input-tel,
-.form__input-name {
-  position: relative;
-  margin-right: 30px;
-}
-
-.form__content-notifications {
+.form__notification {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-1000px);
@@ -16239,7 +16261,7 @@ iframe.uk-cover {
   transition: opacity .3s linear;
 }
 
-.form__content-notifications._sended {
+.form__notification._show {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
@@ -16247,7 +16269,7 @@ iframe.uk-cover {
           transform: translateY(0);
 }
 
-.form__input-sended {
+.form__notification-sended {
   background: rgba(31, 179, 122, 0.88);
   border-radius: 10px;
   padding: 20px;
@@ -16277,7 +16299,11 @@ iframe.uk-cover {
   line-height: 1.1;
 }
 
-.form__input-sended-btn {
+.form__notification-sended-error {
+  background: rgba(179, 31, 31, 0.88);
+}
+
+.form__notification-close-btn {
   position: absolute;
   z-index: 1000;
   top: 20px;
@@ -16289,28 +16315,6 @@ iframe.uk-cover {
   -webkit-box-shadow: 0 0 10px #fe5e796c;
   box-shadow: 0 0 10px #fe5e796c;
   cursor: pointer;
-}
-
-.form__input-error {
-  background: #333;
-  border-radius: 12px;
-  -webkit-transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
-  opacity: 0;
-  font-size: 0;
-  color: #fff;
-  line-height: 1;
-  position: absolute;
-  top: -40px;
-  left: 0px;
-  padding: 5px 8px;
-  white-space: nowrap;
-}
-
-.form__input-error._error {
-  font-size: 15px;
-  opacity: 1;
 }
 
 .news__swiper {
@@ -17155,7 +17159,7 @@ iframe.uk-cover {
 
 .lab-res .form__close {
   position: absolute;
-  z-index: 1000;
+  z-index: 1;
   top: 20px;
   right: 20px;
   padding: 5px;
@@ -17168,17 +17172,9 @@ iframe.uk-cover {
 }
 
 .lab-res .form__wrapper {
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  -webkit-transform: translate(-50%, 20%);
-      -ms-transform: translate(-50%, 20%);
-          transform: translate(-50%, 20%);
-}
-
-.lab-res .form__background-arm {
-  left: -105px;
-  bottom: -510px;
+  -webkit-transform: translateY(75px);
+      -ms-transform: translateY(75px);
+          transform: translateY(75px);
 }
 
 .lab-res .anim__background-mask {
@@ -19258,10 +19254,6 @@ iframe.uk-cover {
     width: 19vw;
     height: 19vw;
   }
-
-  .lab-res .form__background-arm {
-    bottom: -550px;
-  }
 }
 
 @media (max-width: 1366.5px) {
@@ -19593,10 +19585,6 @@ iframe.uk-cover {
     font-size: 16px;
   }
 
-  .lab-res .form__background-arm {
-    bottom: -440px;
-  }
-
   .footer__content-top {
     height: auto;
   }
@@ -19896,20 +19884,20 @@ iframe.uk-cover {
     font-size: 20px;
   }
 
-  .form__btn {
-    font-size: 16px;
-  }
-
-  .form__input-sended {
-    font-size: 16px;
-    margin-bottom: 0;
-    line-height: 1;
-  }
-
   .form__input-error._error {
     font-size: 12px;
     top: -7px;
     padding: 3px 5px;
+  }
+
+  .form__btn {
+    font-size: 16px;
+  }
+
+  .form__notification-sended {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1;
   }
 
   .news__swiper-title {
@@ -20185,10 +20173,6 @@ iframe.uk-cover {
     width: 257px;
     bottom: -305px;
   }
-
-  .lab-res .form__background-arm {
-    bottom: -305px;
-  }
 }
 
 @media (max-width: 662px) {
@@ -20283,11 +20267,6 @@ iframe.uk-cover {
 
   .form__background-arm {
     width: 157px;
-    bottom: -170px;
-    left: -70px;
-  }
-
-  .lab-res .form__background-arm {
     bottom: -170px;
     left: -70px;
   }
