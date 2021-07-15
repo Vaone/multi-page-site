@@ -16933,6 +16933,12 @@ iframe.uk-cover {
   font-weight: 500;
   font-size: 18px;
   margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  -o-transition: transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
 }
 
 .da__content {
@@ -18226,6 +18232,12 @@ iframe.uk-cover {
 
 @media (min-width: 1199.5px) {
   .ta__tag:hover {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+
+  .da__tag:hover {
     -webkit-transform: translateY(-5px);
         -ms-transform: translateY(-5px);
             transform: translateY(-5px);
