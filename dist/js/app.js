@@ -5257,12 +5257,31 @@ if (document.querySelector('.form')) {
   
    //close btn 
   let close = document.querySelector('.form__input-sended-btn');
-  close.addEventListener('click', ()=>{
-    popup.classList.remove('_sended');
-  })
+  if (close) {
+    close.addEventListener('click', ()=>{
+      popup.classList.remove('_sended');
+    });
+  }
 }
 
-
+// popup form
+if (document.querySelector('.form__open')) {
+  const btnFormOpen = document.querySelector('.form__open');
+  const btnFormClose = document.querySelector('.form__close');
+  const form = document.querySelector('.form');
+  if (btnFormOpen) {
+    btnFormOpen.addEventListener('click', () => {
+      form.classList.add('_visible');
+      document.body.classList.add('_lock');
+    });
+  }
+  if (btnFormClose) {
+    btnFormClose.addEventListener('click', () => {
+      form.classList.remove('_visible');
+      document.body.classList.remove('_lock');
+    })
+  }
+}
 
 
 

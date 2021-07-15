@@ -20,17 +20,17 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 43px;
+    top: 15px;
     left: 0;
     pointer-events: none;
   }
 
   &__fields {
     border-radius: 34px;
-    padding: 56px 65px 113px 65px;
+    padding: 56px 65px 56px 65px;
 
-    @media (max-width: 1366px) {
-      padding: 40px 10px 40px 10px;
+    @media (max-width: 1024px) {
+      padding: 56px 10px 10px 10px;
     }
   }
 
@@ -74,7 +74,7 @@
     color: #ffffff;
     margin-bottom: 75px;
     text-align: center;
-    @media (max-width: 1450px) {
+    @media (max-width: 1396.5px) {
       margin-bottom: 40px;
     }
     @media (max-width: 1366px) {
@@ -94,7 +94,7 @@
     justify-content: space-around;
     width: 100%;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1024px) {
       flex-direction: column;
       width: 80%;
       justify-content: center;
@@ -132,14 +132,12 @@
     &:focus {
       color: #000;
     }
-    @media (max-width: 1366px) {
+    @media (max-width: 1024px) {
       margin-right: 0;
     }
     &:not(:last-child) {
-      @media (max-width: 1366px) {
+      @media (max-width: 1024px) {
         margin-bottom: 20px;
-      }
-      @media (max-width: 1366px) {
         font-size: 3vw;
       }
     }
@@ -168,7 +166,7 @@
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     }
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1024px) {
       width: 50%;
       font-size: 2vw;
       padding: 5px;
@@ -181,25 +179,28 @@
   // ARM----BG-----------------------
   &__background-arm {
     position: absolute;
-    bottom: -450px;
-    left: 0;
     pointer-events: none;
     z-index: 2;
     width: 457px;
     height: auto;
 
+    left: -105px;
+    bottom: -510px;
+    @media (max-width: 1366px) {
+       bottom: -550px;
+    }
     @media (max-width: 1024px) {
       width: 357px;
-      bottom: -330px;
-      left: -30px;
+      bottom: -440px;
     }
     @media (max-width: 720px) {
       width: 257px;
-      bottom: -215px;
+      bottom: -305px;
     }
     @media (max-width: 480px) {
       width: 157px;
-      bottom: -95px;
+      bottom: -170px;
+      left: -70px;
     }
   }
 }
@@ -207,7 +208,7 @@
 .form__input-tel, .form__input-name {
   position: relative;
   margin-right: 30px;
-  @media (max-width: 1366.5px) {
+  @media (max-width: 1023.5px) {
     margin-right: 0;
   }
 }

@@ -17,7 +17,7 @@
         </article>
         
         <div class="uk-flex uk-flex-center">
-          <div class="btn uk-margin-small-right">Оставить заявку</div>
+          <a class="btn uk-margin-small-right form__open">Оставить заявку</a>
           <a href="#" class="btn">Позвонить</a>
         </div>
         
@@ -88,7 +88,7 @@
           <div>
             <div class="block__card uk-card uk-card-default uk-card-body">
               <div class="block__card-img uk-flex uk-flex-center">
-                <img src="./img/news1.png" data-src="./img/news1.png" width="340px" height="362px" alt="" uk-img  sizes="(min-width: 340px) 340px, 100vw">
+                <img src="./img/services-img.png" data-src="./img/services-img.png" width="470px" height="271px" alt="" uk-img  sizes="(min-width: 340px) 340px, 100vw">
               </div>
               <div class="block__card-title">
                 Наименование услуги
@@ -105,7 +105,7 @@
           <div>
             <div class="block__card uk-card uk-card-default uk-card-body">
               <div class="block__card-img uk-flex uk-flex-center">
-                <img src="./img/news1.png" data-src="./img/news1.png" width="340px" height="362px" alt="" uk-img  sizes="(min-width: 340px) 340px, 100vw">
+                <img src="./img/services-img.png" data-src="./img/services-img.png" width="470px" height="271px" alt="" uk-img  sizes="(min-width: 340px) 340px, 100vw">
               </div>
               <div class="block__card-title">
                 Наименование услуги
@@ -122,7 +122,7 @@
           <div>
             <div class="block__card uk-card uk-card-default uk-card-body">
               <div class="block__card-img uk-flex uk-flex-center">
-                <img src="./img/news1.png" data-src="./img/news1.png" width="340px" height="362px" alt="" uk-img  sizes="(min-width: 340px) 340px, 100vw">
+                <img src="./img/services-img.png" data-src="./img/services-img.png" width="470px" height="271px" alt="" uk-img  sizes="(min-width: 340px) 340px, 100vw">
               </div>
               <div class="block__card-title">
                 Наименование услуги
@@ -168,7 +168,7 @@
           <form class="form__fields" action="#">
             <fieldset class="uk-fieldset form__content">
               <div class="form__content-notifications">
-                <div class="form__input-sended _sended">Отправлено! Спасибо за ожидание скоро с вами свяжутся</div>
+                <div class="form__input-sended">Отправлено! Спасибо за ожидание скоро с вами свяжутся</div>
               </div>
               <label class="uk-form-label form__title">Остались вопросы, но нет ответов?</label>
               <label class="uk-form-label form__subtitle">Свяжитесь с нами по телефону +998 9* *** **** или
@@ -183,13 +183,20 @@
                   <div class="form__input-error _error">Заполните форму</div>
                 </div>
                 <button class="uk-button uk-button-default form__btn" type="submit">Отправить</button>
+                <button class="form__close" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke="#000" stroke-width="1.06" d="M16,16 L4,4"></path>
+                    <path fill="none" stroke="#000" stroke-width="1.06" d="M16,4 L4,16"></path>
+                  </svg>
+                </button>
               </div>
             </fieldset>
           </form>
-          <span class="form__background"></span>
+          <div class="form__background">
+            <img src="./img/longArm.png" alt="" class="form__background-arm">
+          </div>
         </div>
       </div>
-      <img src="./img/longArm.png" alt="" class="form__background-arm">
     </section>
   </section>
 </page>
