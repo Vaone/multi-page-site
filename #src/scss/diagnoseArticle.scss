@@ -174,9 +174,29 @@
         letter-spacing: 0.12px;
         color: #363049;
         opacity: 0.7;
+        
         @media (max-width: 768px) {
           font-size: 14px;
         }
+        &:last-child {
+          word-break: break-all;
+        }
+      }
+    }
+    // changing gap between cards
+    .uk-grid {
+      @media (max-width: 1440px) {
+        margin-left: -15px;
+      }
+      &>*{
+        @media (max-width: 1440px) {
+          padding-left: 15px;
+        }
+      }
+    }
+    *+.uk-grid-margin {
+      @media (max-width:1440px) {
+        margin-top: 15px;
       }
     }
   }

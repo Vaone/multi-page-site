@@ -16932,6 +16932,10 @@ iframe.uk-cover {
   opacity: 0.7;
 }
 
+.ta .ta__consult-card-text:last-child {
+  word-break: break-all;
+}
+
 .da {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
@@ -17055,9 +17059,17 @@ iframe.uk-cover {
   opacity: 0.7;
 }
 
+.da .da__consult-card-text:last-child {
+  word-break: break-all;
+}
+
 .lab-res {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+}
+
+.lab-res__wrapper {
+  background: #f7fafe;
 }
 
 .lab-res .block__wrapper {
@@ -17170,6 +17182,7 @@ iframe.uk-cover {
   -webkit-transition: opacity .3s linear;
   -o-transition: opacity .3s linear;
   transition: opacity .3s linear;
+  padding-top: 5vh;
 }
 
 .lab-res .form._visible {
@@ -17468,6 +17481,45 @@ iframe.uk-cover {
 
 .our-lab__team {
   background: #fff;
+}
+
+.our-lab__team .tm__card {
+  padding: 15px 10px 11px 10px;
+  border-radius: 24px;
+  background: #e7efff;
+}
+
+.our-lab__team .tm__card-photo img {
+  border-radius: 50%;
+  width: 222px;
+  height: auto;
+}
+
+.our-lab__team .tm__card .cnt {
+  padding: 25px 30px;
+  border-radius: 24px;
+  background: #fff;
+  margin-top: 20px;
+  min-height: 200px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 99.33%;
+  text-align: left;
+  color: #3a62b4;
+}
+
+.our-lab__team .tm__card .cnt-name {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 110%;
+  color: #292930;
+}
+
+.our-lab__team .tm__card .cnt-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999fae;
 }
 
 .our-lab .anim__background-mask {
@@ -19325,6 +19377,30 @@ iframe.uk-cover {
     margin-top: 15px;
   }
 
+  .ta .ta__consult .uk-grid {
+    margin-left: -15px;
+  }
+
+  .ta .ta__consult .uk-grid > * {
+    padding-left: 15px;
+  }
+
+  .ta .ta__consult * + .uk-grid-margin {
+    margin-top: 15px;
+  }
+
+  .da .da__consult .uk-grid {
+    margin-left: -15px;
+  }
+
+  .da .da__consult .uk-grid > * {
+    padding-left: 15px;
+  }
+
+  .da .da__consult * + .uk-grid-margin {
+    margin-top: 15px;
+  }
+
   .trmnt-loc .uk-grid {
     margin-left: -15px;
   }
@@ -19388,6 +19464,46 @@ iframe.uk-cover {
   .experts__swiper > .anim__background img {
     width: 19vw;
     height: 19vw;
+  }
+
+  .lab-res .uk-grid {
+    margin-left: -15px;
+  }
+
+  .lab-res .uk-grid > * {
+    padding-left: 15px;
+  }
+
+  .lab-res * + .uk-grid-margin {
+    margin-top: 15px;
+  }
+
+  .our-lab__specialization .uk-grid {
+    margin-left: -15px;
+  }
+
+  .our-lab__specialization .uk-grid > * {
+    padding-left: 15px;
+  }
+
+  .our-lab__specialization * + .uk-grid-margin {
+    margin-top: 15px;
+  }
+
+  .our-lab__team .tm__card .cnt {
+    padding: 15px 20px;
+  }
+
+  .our-lab__team .uk-grid {
+    margin-left: -15px;
+  }
+
+  .our-lab__team .uk-grid > * {
+    padding-left: 15px;
+  }
+
+  .our-lab__team * + .uk-grid-margin {
+    margin-top: 15px;
   }
 }
 
@@ -20314,6 +20430,30 @@ iframe.uk-cover {
     line-height: 1.1;
   }
 
+  .our-lab__team .tm__card {
+    height: auto;
+  }
+
+  .our-lab__team .tm__card-photo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .our-lab__team .tm__card .cnt {
+    font-size: 16px;
+    line-height: 1;
+    min-height: auto;
+  }
+
+  .our-lab__team .tm__card .cnt-name {
+    font-size: 16px;
+  }
+
+  .our-lab__team .tm__card .cnt-description {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
   .footer__content-bottom img {
     width: 169px;
     top: -10px;
@@ -20612,6 +20752,11 @@ iframe.uk-cover {
   }
 
   .our-lab__content {
+    font-size: 14px;
+  }
+
+  .our-lab__team .tm__card .cnt-name {
+    line-height: 1.1;
     font-size: 14px;
   }
 }

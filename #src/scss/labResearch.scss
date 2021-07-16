@@ -1,7 +1,9 @@
 .lab-res {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
-  // position: relative;
+  &__wrapper {
+    background: #f7fafe;
+  }
   .block__wrapper {
     padding: 48px 52px 50px 52px;
     margin-bottom: 67px;
@@ -20,7 +22,7 @@
       line-height: 1.1;
       margin-bottom: 15px;
     }
-  }
+  } 
   
   &__content {
     margin: 47px 0 20px 0;
@@ -148,6 +150,23 @@
     }
   }
 
+  // changing gap between cards
+  .uk-grid {
+    @media (max-width: 1366px) {
+      margin-left: -15px;
+    }
+    &>*{
+      @media (max-width: 1366px) {
+        padding-left: 15px;
+      }
+    }
+  }
+  *+.uk-grid-margin {
+    @media (max-width:1366px) {
+      margin-top: 15px;
+    }
+  }
+
   .form {
     position: fixed;
     top: 0;
@@ -161,6 +180,7 @@
     visibility: hidden;
     transform: translateY(-1000px);
     transition: opacity .3s linear;
+    padding-top: 5vh;
     &._visible {
       opacity: 1;
       visibility: visible;
@@ -179,6 +199,7 @@
       box-shadow: 0 0 10px #fe5e796c;
       cursor: pointer;
     }
+
   }
 
 
@@ -199,4 +220,4 @@
       right: -220px;
     }
   }
-}
+} 
