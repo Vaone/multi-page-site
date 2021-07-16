@@ -16599,10 +16599,30 @@ iframe.uk-cover {
   padding: 20px 20px 35px 20px;
 }
 
-.treatment-nav .block__card img {
+.treatment-nav .block__card-title {
+  margin-top: 20px;
+}
+
+.treatment-nav .block__card-img {
+  position: relative;
+}
+
+.treatment-nav .block__card-img img {
   border-radius: 20px;
   max-width: 100%;
   height: auto;
+}
+
+.treatment-nav .block__card-date {
+  position: absolute;
+  bottom: -15px;
+  left: 8%;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .treatment-nav .anim__background-mask {
@@ -20245,7 +20265,7 @@ iframe.uk-cover {
     width: 500px;
   }
 
-  .treatment-nav .block__card img {
+  .treatment-nav .block__card-img img {
     max-height: 300px;
   }
 
@@ -20374,6 +20394,12 @@ iframe.uk-cover {
   .experts__swiper-name {
     line-height: 1.1;
     font-size: 14px;
+  }
+
+  .treatment-nav .block__card-date {
+    font-size: 14px;
+    line-height: 1.2;
+    bottom: -7.5px;
   }
 
   .ta__content {

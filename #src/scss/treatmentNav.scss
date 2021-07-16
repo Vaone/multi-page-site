@@ -30,12 +30,35 @@
     @media (max-width: 639.5px) {
       width: 500px;
     }
-    img {
-      border-radius: 20px;
-      max-width: 100%;
-      height: auto;
-      @media (max-width: 639.5px) {
-        max-height: 300px;
+    &-title {
+      margin-top: 20px;
+    }
+    &-img {
+      position: relative;
+      img {
+        border-radius: 20px;
+        max-width: 100%;
+        height: auto;
+        @media (max-width: 639.5px) {
+          max-height: 300px;
+        }
+      }
+    }
+    &-date {
+      position: absolute;
+      bottom: -15px;
+      left: 8%;
+      background: #fff;
+      color: #000;
+      border-radius: 5px;
+      padding: 0 5px;
+
+      font-size: 16px;
+      font-weight: 600;
+      @media (max-width: 425px) {
+        font-size: 14px;
+        line-height: 1.2;
+        bottom: -7.5px;
       }
     }
   }
