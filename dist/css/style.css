@@ -16093,6 +16093,7 @@ iframe.uk-cover {
 .form__fields {
   border-radius: 34px;
   padding: 56px 65px 56px 65px;
+  z-index: 1;
   position: relative;
 }
 
@@ -16195,6 +16196,7 @@ iframe.uk-cover {
   position: absolute;
   top: -40px;
   left: 0px;
+  z-index: 1;
   padding: 5px 8px;
   white-space: nowrap;
 }
