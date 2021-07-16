@@ -17290,7 +17290,13 @@ iframe.uk-cover {
 
 .our-lab .block__wrapper {
   padding: 48px 52px 50px 52px;
+  border-radius: 45px 45px 0 0;
+}
+
+.our-lab .block__wrapper:last-child {
   margin-bottom: 67px;
+  border-radius: 0 0 45px 45px;
+  padding: 80px 52px 50px 52px;
 }
 
 .our-lab .block__title {
@@ -17302,14 +17308,19 @@ iframe.uk-cover {
 }
 
 .our-lab__content {
-  margin: 47px 0 20px 0;
+  margin: 47px 0 80px 0;
   font-size: 20px;
   line-height: 39px;
   color: #000000;
 }
 
+.our-lab__content-left__part img {
+  border-radius: 20px;
+}
+
 .our-lab__specialization {
   background: #fff;
+  margin-bottom: 80px;
 }
 
 .our-lab__specialization .our-lab__specs .card-spec {
@@ -17328,6 +17339,7 @@ iframe.uk-cover {
   -o-transition: box-shadow .5s linear, border .5s linear;
   transition: box-shadow .5s linear, border .5s linear;
   transition: box-shadow .5s linear, border .5s linear, -webkit-box-shadow .5s linear;
+  position: relative;
 }
 
 .our-lab__specialization .our-lab__specs .card-spec:hover {
@@ -17392,8 +17404,66 @@ iframe.uk-cover {
   background: #EEC3E0;
 }
 
+.our-lab__statistics {
+  height: 255px;
+  background: #FE5E7A;
+  width: 100%;
+}
+
+.our-lab__statistics-bg {
+  position: relative;
+}
+
+.our-lab__statistics-bg span {
+  position: absolute;
+  top: -245px;
+  right: 30px;
+}
+
+.our-lab__statistics-content {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  padding: 10px 10px;
+}
+
+.our-lab__statistics-content .stat__cont-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-lab__statistics-content .stat__cont-item:not(:last-child) {
+  padding-right: 80px;
+}
+
+.our-lab__statistics-content .stat__cont-item:not(:first-child) {
+  padding-left: 80px;
+}
+
+.our-lab__statistics-content .stat__cont-item-icon {
+  text-align: center;
+  margin-right: 29px;
+  padding-top: 10px;
+}
+
+.our-lab__statistics-content .stat__cont-item-context {
+  text-align: center;
+}
+
+.our-lab__statistics-content .stat__cont-item-context-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
 .our-lab__principles {
   background: #fff;
+  margin-bottom: 100px;
 }
 
 .our-lab__team {
@@ -19210,6 +19280,17 @@ iframe.uk-cover {
   }
 }
 
+@media (max-width: 1590px) {
+  .our-lab__statistics-content .stat__cont-item:not(:last-child) {
+    padding-right: 1.5vw;
+    border-right: 1px solid #ffffff;
+  }
+
+  .our-lab__statistics-content .stat__cont-item:not(:first-child) {
+    padding-left: 1.5vw;
+  }
+}
+
 @media (max-width: 1550px) {
   .intro .row__bottomSection-Clm .row__bottomSection-item > p {
     font-size: 1.8vw;
@@ -19639,6 +19720,14 @@ iframe.uk-cover {
     font-size: 16px;
   }
 
+  .our-lab__statistics-content .stat__cont-item:not(:last-child) {
+    padding-right: 10px;
+  }
+
+  .our-lab__statistics-content .stat__cont-item:not(:first-child) {
+    padding-left: 10px;
+  }
+
   .footer__content-top {
     height: auto;
   }
@@ -19833,6 +19922,12 @@ iframe.uk-cover {
     padding: 10px;
     font-size: 3.8vw;
     line-height: 1.1;
+  }
+}
+
+@media (max-width: 920px) {
+  .our-lab__statistics-content .stat__cont-item-icon {
+    display: none;
   }
 }
 
@@ -20189,6 +20284,10 @@ iframe.uk-cover {
     padding: 20px 30px 20px 30px;
   }
 
+  .our-lab .block__wrapper:last-child {
+    padding: 40px 30px 20px 30px;
+  }
+
   .our-lab .block__title {
     font-size: 20px;
     line-height: 1.1;
@@ -20205,8 +20304,14 @@ iframe.uk-cover {
     padding: 15px 10px;
   }
 
-  .our-lab__statistics {
-    left: -30px;
+  .our-lab__statistics-content {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .our-lab__statistics-content .stat__cont-item-context-title {
+    font-size: 8vw;
+    line-height: 1.1;
   }
 
   .footer__content-bottom img {
@@ -20282,6 +20387,12 @@ iframe.uk-cover {
   }
 }
 
+@media (max-width: 575px) {
+  .our-lab__statistics-content .stat__cont-item-context-title {
+    font-size: 45px;
+  }
+}
+
 @media (max-width: 568px) {
   .intro .row__topSection-secondClm > .row__topSection-item:first-child {
     -webkit-box-orient: vertical;
@@ -20334,6 +20445,39 @@ iframe.uk-cover {
     width: 157px;
     bottom: -170px;
     left: -70px;
+  }
+}
+
+@media (max-width: 460px) {
+  .our-lab__statistics {
+    height: auto;
+  }
+
+  .our-lab__statistics-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .our-lab__statistics-content .stat__cont-item:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px dashed #ffffff;
+    padding-right: 0;
+  }
+
+  .our-lab__statistics-content .stat__cont-item:not(:first-child) {
+    padding-left: 0;
+  }
+
+  .our-lab__statistics-content .stat__cont-item-icon {
+    display: block;
+    padding-top: 0;
+    margin-right: 15px;
+  }
+
+  .our-lab__statistics-content .stat__cont-item-context-subtitle {
+    max-width: 90px;
   }
 }
 
