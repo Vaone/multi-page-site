@@ -17543,6 +17543,71 @@ iframe.uk-cover {
   right: -220px;
 }
 
+.news {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.news .block__wrapper {
+  padding: 50px 52px 50px 52px;
+  margin-bottom: 67px;
+}
+
+.news .cnt__img {
+  min-width: 500px;
+  float: left;
+  margin-right: 35px;
+}
+
+.news .cnt__img img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news .cnt__top-data {
+  max-width: 70px;
+  background: #DDEAF7;
+  padding: 3px 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 166.69%;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.news .cnt__top-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: #415466;
+  text-align: left;
+}
+
+.news .cnt__text {
+  font-size: 20px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.news .anim__background-mask {
+  top: -105px;
+  left: -140px;
+}
+
+.news .block__background-anim {
+  position: relative;
+}
+
+.news .block__background-anim .anim__bg-atom {
+  position: absolute;
+  top: -140px;
+  right: -220px;
+}
+
 .footer__content {
   background: #FE5E7A;
   width: 100%;
@@ -19505,6 +19570,10 @@ iframe.uk-cover {
   .our-lab__team * + .uk-grid-margin {
     margin-top: 15px;
   }
+
+  .news .cnt__img {
+    min-width: auto;
+  }
 }
 
 @media (max-width: 1366.5px) {
@@ -19842,6 +19911,22 @@ iframe.uk-cover {
 
   .our-lab__statistics-content .stat__cont-item:not(:first-child) {
     padding-left: 10px;
+  }
+
+  .news .cnt__img {
+    float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 
   .footer__content-top {
@@ -20454,6 +20539,28 @@ iframe.uk-cover {
     line-height: 1.1;
   }
 
+  .news .block__wrapper {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .news .cnt__top-data {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .news .cnt__top-title {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+
+  .news .cnt__text {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 20px 0 20px 0;
+  }
+
   .footer__content-bottom img {
     width: 169px;
     top: -10px;
@@ -20757,6 +20864,10 @@ iframe.uk-cover {
 
   .our-lab__team .tm__card .cnt-name {
     line-height: 1.1;
+    font-size: 14px;
+  }
+
+  .news .cnt__text {
     font-size: 14px;
   }
 }
