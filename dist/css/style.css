@@ -16627,6 +16627,7 @@ iframe.uk-cover {
 .our-team .block__card {
   background: #F6F9FC;
   margin-top: 150px;
+  padding: 10px 10px 30px 10px;
 }
 
 .our-team .block__card-img {
@@ -17203,8 +17204,23 @@ iframe.uk-cover {
   height: 720px;
 }
 
+.trmnt-loc .uk-grid {
+  margin-left: -25px;
+}
+
+.trmnt-loc .uk-grid > * {
+  padding-left: 25px;
+}
+
 .trmnt-loc .block__card {
   background: #F6F9FC;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 20px 20px 35px 20px;
+}
+
+.trmnt-loc .block__card-img img {
+  border-radius: 20px;
 }
 
 .trmnt-loc .block__card-btn-call {
@@ -18846,6 +18862,10 @@ iframe.uk-cover {
   .treatment-nav * + .uk-grid-margin {
     margin-top: 25px;
   }
+
+  .trmnt-loc * + .uk-grid-margin {
+    margin-top: 25px;
+  }
 }
 
 @media (min-width: 1366px) {
@@ -19201,6 +19221,24 @@ iframe.uk-cover {
   }
 
   .treatment-nav * + .uk-grid-margin {
+    margin-top: 15px;
+  }
+
+  .trmnt-loc .uk-grid {
+    margin-left: -15px;
+  }
+
+  .trmnt-loc .uk-grid > * {
+    padding-left: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .trmnt-loc * + .uk-grid-margin {
     margin-top: 15px;
   }
 }
@@ -20217,6 +20255,10 @@ iframe.uk-cover {
 
   .lab-res .block__card-img img {
     max-height: 300px;
+  }
+
+  .trmnt-loc .block__card {
+    width: 500px;
   }
 }
 
