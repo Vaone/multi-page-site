@@ -64,13 +64,25 @@
     background: #fff;
     margin-bottom: 80px;
     .our-lab__specs {
-      
+      &>* {
+        width: calc(100%);
+        @media (min-width: 480px) {
+          width: calc(100%/2);
+        }
+        @media (min-width: 768px) {
+          width: calc(100%/3);
+        }
+        @media (min-width: 1024px) {
+          width: calc(100%/5);
+        }
+      }
       .card-spec {
         box-shadow: 0;
         border-radius: 18px;
         border: 1px solid rgba(47, 47, 47, 0.15);
         padding: 45px 27px;
-  
+        min-height: 292px;
+
         font-family: "Poppins",sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -79,7 +91,9 @@
         
         transition: box-shadow .5s linear, border .5s linear;
         position: relative;
-        
+        @media (max-width: 1366px) {
+          padding: 20px 10px;
+        }
         @media (max-width: 768px) {
           padding: 15px 10px;
         }
@@ -95,7 +109,8 @@
           height: 47px;
           background: #FFD2A6;
           border-radius: 50%;
-  
+          margin-bottom: 10px;
+
           font-size: 18px;
           line-height: 150%;
           letter-spacing: 0.004em;
@@ -106,8 +121,9 @@
           font-weight: bold;
           font-size: 16px;
           line-height: 160%;
-  
           color: #000000;
+
+          margin-bottom: 12px;
         }
   
         &-text {
@@ -115,6 +131,8 @@
           line-height: 160%;
           letter-spacing: 0.004em;
           color: rgba(57, 57, 57, 0.6);
+
+          margin-bottom: 20px;
         }
   
         &-btn {
@@ -149,16 +167,19 @@
 
     // changing gap between cards
     .uk-grid {
+      margin-left: -27px;
       @media (max-width: 1366px) {
         margin-left: -15px;
       }
       &>*{
+        padding-left: 27px;
         @media (max-width: 1366px) {
           padding-left: 15px;
         }
       }
     }
     *+.uk-grid-margin {
+      margin-top: 27px;
       @media (max-width:1366px) {
         margin-top: 15px;
       }

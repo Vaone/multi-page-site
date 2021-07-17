@@ -17336,12 +17336,17 @@ iframe.uk-cover {
   margin-bottom: 80px;
 }
 
+.our-lab__specialization .our-lab__specs > * {
+  width: calc(100%);
+}
+
 .our-lab__specialization .our-lab__specs .card-spec {
   -webkit-box-shadow: 0;
           box-shadow: 0;
   border-radius: 18px;
   border: 1px solid rgba(47, 47, 47, 0.15);
   padding: 45px 27px;
+  min-height: 292px;
   font-family: "Poppins",sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -17375,6 +17380,7 @@ iframe.uk-cover {
   height: 47px;
   background: #FFD2A6;
   border-radius: 50%;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 0.004em;
@@ -17386,6 +17392,7 @@ iframe.uk-cover {
   font-size: 16px;
   line-height: 160%;
   color: #000000;
+  margin-bottom: 12px;
 }
 
 .our-lab__specialization .our-lab__specs .card-spec-text {
@@ -17393,6 +17400,7 @@ iframe.uk-cover {
   line-height: 160%;
   letter-spacing: 0.004em;
   color: rgba(57, 57, 57, 0.6);
+  margin-bottom: 20px;
 }
 
 .our-lab__specialization .our-lab__specs .card-spec-btn {
@@ -17415,6 +17423,18 @@ iframe.uk-cover {
 
 .our-lab__specialization .our-lab__specs > div:nth-child(5) .card-spec-num {
   background: #EEC3E0;
+}
+
+.our-lab__specialization .uk-grid {
+  margin-left: -27px;
+}
+
+.our-lab__specialization .uk-grid > * {
+  padding-left: 27px;
+}
+
+.our-lab__specialization * + .uk-grid-margin {
+  margin-top: 27px;
 }
 
 .our-lab__statistics {
@@ -17773,6 +17793,12 @@ iframe.uk-cover {
   z-index: 1;
 }
 
+@media (min-width: 480px) {
+  .our-lab__specialization .our-lab__specs > * {
+    width: calc(100%/2);
+  }
+}
+
 @media (min-width: 640px) {
   .uk-container {
     padding-left: 30px;
@@ -18075,6 +18101,12 @@ iframe.uk-cover {
 @media (min-width: 767.9px) {
   .block__card {
     padding: 44px 41px;
+  }
+}
+
+@media (min-width: 768px) {
+  .our-lab__specialization .our-lab__specs > * {
+    width: calc(100%/3);
   }
 }
 
@@ -18502,6 +18534,12 @@ iframe.uk-cover {
 
   .uk-hidden\@m {
     display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .our-lab__specialization .our-lab__specs > * {
+    width: calc(100%/5);
   }
 }
 
@@ -19541,6 +19579,10 @@ iframe.uk-cover {
 
   .lab-res * + .uk-grid-margin {
     margin-top: 15px;
+  }
+
+  .our-lab__specialization .our-lab__specs .card-spec {
+    padding: 20px 10px;
   }
 
   .our-lab__specialization .uk-grid {
