@@ -179,7 +179,7 @@
       margin-left: -8px;
       transition: opacity 0.3s linear;
       @media (max-width: 1366.5px) {
-        top: -11px;
+        top: -17px;
       }
     
       &._error{
@@ -187,7 +187,6 @@
         opacity: 1;
         @media (max-width: 768px) {
           font-size: 12px;
-          top: -10px;
           min-height: 25px;
           padding: 3px 5px;
           margin-left: -5px;

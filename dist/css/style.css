@@ -19706,7 +19706,7 @@ iframe.uk-cover {
 
 @media (max-width: 1366.5px) {
   .form__input-error {
-    top: -11px;
+    top: -17px;
   }
 }
 
@@ -20373,7 +20373,6 @@ iframe.uk-cover {
 
   .form__input-error._error {
     font-size: 12px;
-    top: -10px;
     min-height: 25px;
     padding: 3px 5px;
     margin-left: -5px;

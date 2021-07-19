@@ -24,7 +24,7 @@ if (menuLinks.length > 0) {
       //   menuBody.classList.remove("_active");
       // }
 
-      window.scrollTo({
+      window.scroll({
         top: gotoBlockValue,
         behavior: "smooth",
       });
