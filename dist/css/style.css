@@ -20675,6 +20675,7 @@ iframe.uk-cover {
         -ms-flex-pack: end;
             justify-content: flex-end;
     height: 173px;
+    margin-bottom: 25px;
   }
 
   .footer__content-bottom > .like__button {
