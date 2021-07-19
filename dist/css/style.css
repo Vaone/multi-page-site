@@ -20669,6 +20669,19 @@ iframe.uk-cover {
   }
 }
 
+@media (max-width: 650px) {
+  .footer__content-bottom {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 173px;
+  }
+
+  .footer__content-bottom > .like__button {
+    display: none;
+  }
+}
+
 @media (max-width: 639px) {
   .uk-notification {
     left: 10px;
