@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+  scroll-behavior: unset;
+}
+
 body._lock,
 .form._lock {
   overflow-y: hidden !important;

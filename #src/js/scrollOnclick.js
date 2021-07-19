@@ -11,13 +11,11 @@ if (menuLinks.length > 0) {
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
       const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset
 
-      setTimeout(function() {
-        window.scrollTo({
-          top: gotoBlockValue,
-          behavior: "smooth",
-        });
-        e.preventDefault();
-      }, 500)
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: "smooth",
+      });
+      e.preventDefault();
     }
   }
 }

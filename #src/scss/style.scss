@@ -11,6 +11,9 @@
 // $secondHover: #430692e6;
 // $thirdColor: #116868;
 // $thirdTr: #11d8ff24;
+* {
+  scroll-behavior: unset;
+}
 
 body._lock, .form._lock {
   overflow-y: hidden!important;
