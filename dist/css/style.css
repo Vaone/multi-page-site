@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-* {
-  scroll-behavior: unset;
-}
-
 body._lock,
 .form._lock {
   overflow-y: hidden !important;
@@ -16882,6 +16878,11 @@ iframe.uk-cover {
   transition: transform .5s linear, -webkit-transform .5s linear;
 }
 
+.ta__tag:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .ta__content {
   margin: 47px 0 20px 0;
   font-size: 20px;
@@ -17022,6 +17023,11 @@ iframe.uk-cover {
   -o-transition: transform .5s linear;
   transition: transform .5s linear;
   transition: transform .5s linear, -webkit-transform .5s linear;
+}
+
+.da__tag:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .da__content {

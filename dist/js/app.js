@@ -5201,27 +5201,6 @@ const Experts = new Swiper(".experts__swiper-slider", {
 
 })));
 //# sourceMappingURL=imask.js.map;
-//прокрутка по клику
-const menuLinks = document.querySelectorAll(".block__tag[data-goto]");
-if (menuLinks.length > 0) {
-  menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener("click", onMenuLinkClick);
-  });
-
-  function onMenuLinkClick(e) {
-    const menuLink = e.target;
-    if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-      const gotoBlock = document.querySelector(menuLink.dataset.goto);
-      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset
-
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: "smooth",
-      });
-      e.preventDefault();
-    }
-  }
-};
 
 // pop-up form sended observer
 if (document.querySelector('.form')) {

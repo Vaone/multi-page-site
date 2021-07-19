@@ -7,9 +7,9 @@
         <h2 class="da__subtitle block__subtitle uk-margin-small">Как диакностировать рак</h2>
         <h1 class="da__title block__title uk-margin-small">Как диагностировать "Наименование заболевания"</h1>
         <div class="da__tags block__tags uk-flex uk-flex-center uk-flex-wrap">
-          <div data-goto=".da__symptoms" class="da__tag block__tag">#симптомы</div>
-          <div data-goto=".da__lab-diag" class="da__tag block__tag">#как диагностировать</div>
-          <div data-goto=".da__title-map" class="da__tag block__tag">#к кому обращаться</div>
+          <a class="da__tag block__tag" href="#da__symptoms" uk-scroll>#симптомы</a>
+          <a class="da__tag block__tag" href="#da__lab-diag" uk-scroll>#как диагностировать</a>
+          <a class="da__tag block__tag" href="#da__treatment" uk-scroll>#к кому обращаться</a>
         </div>
 
         <!-- background pictures -->
@@ -23,7 +23,7 @@
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</br></br>
           <strong>Where does it come from?</strong></br>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-          <div class="da__symptoms accordion">
+          <div class="da__symptoms accordion" id="da__symptoms">
             <h1 class="da__title-symptoms block__title">Симптомы</h1>
             <ul class="uk-child-width-1-1 uk-child-width-1-2@m uk-text-center accordion__items-container" uk-grid="masonry: true">
               <li class="accordion__items-element">
@@ -100,7 +100,7 @@
   </section>
 
   <!-- Lab diagnostic -->
-  <section class="da__lab-diag">
+  <section class="da__lab-diag" id="da__lab-diag">
     <div class="uk-container uk-container-center da__container">
       <div class="lab__diag block__wrapper uk-width-1-1">
         <!-- Container title -->
@@ -189,7 +189,7 @@
 
 
     <!-- Лечение -->
-  <section class="da__treatment">
+  <section class="da__treatment" id="da__treatment">
     <div class="uk-container uk-container-center da__container">
       <div class="block__wrapper uk-width-1-1">
           <!-- background pictures -->
