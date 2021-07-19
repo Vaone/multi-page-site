@@ -5235,6 +5235,7 @@ if (menuLinks.length > 0) {
     }
   }
 };
+
 // pop-up form sended observer
 if (document.querySelector('.form')) {
   let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
@@ -5348,27 +5349,39 @@ if (tel) {
 
 
 // adaptive accordion in Footer 
-let accordions = document.querySelectorAll('.footer__accordion');
-let submenu__accordions = document.querySelectorAll('.submenu__accordion');
+// let accordions = document.querySelectorAll('.footer__accordion');
+// let keys = document.querySelectorAll('.accordion__key');
+// let screenWidth = document.documentElement.clientWidth;
+// if (keys) {
+//   screenWidth.addEventListener('change', () => {
+//     if (screenWidth > 1024) {
+//       for (let i=0; i<keys.length; i++) {
+//         let key = keys[i];
+//         key.classList.add('uk-open');
+//       }
+//     }
+//   });
+// }
 
-if (accordions) {
-    for (let i=0; i<accordions.length; i++) {
-      let accordion = accordions[i];
-      let submenu__accordion = submenu__accordions[i];
-      function footerAccord(e) {
-        if (e.matches) { 
-          accordion.setAttribute('uk-nav', null);
-        } else {
-          accordion.removeAttribute('uk-nav');
-          submenu__accordion.removeAttribute('hidden');
-        }
-      }
-  
-      var mediaWidth = window.matchMedia("(max-width: 1024px)")
-      footerAccord(mediaWidth) // Call listener function at run time
-      mediaWidth.addListener(footerAccord) // Attach listener function on state changes
-    }
-}
+
+// if (accordions) {
+//   for (let i=0; i<accordions.length; i++) {
+//     let accordion = accordions[i];
+//     let submenu__accordion = submenu__accordions[i];
+//     function footerAccord(e) {
+//       if (e.matches) { 
+//         accordion.setAttribute('uk-nav', null);
+//       } else {
+//         accordion.removeAttribute('uk-nav');
+//         submenu__accordion.removeAttribute('hidden');
+//       }
+//     }
+
+//     var mediaWidth = window.matchMedia("(max-width: 1024px)")
+//     footerAccord(mediaWidth) // Call listener function at run time
+//     mediaWidth.addListener(footerAccord) // Attach listener function on state changes
+//   }
+// }
 
 
 "use strict"
