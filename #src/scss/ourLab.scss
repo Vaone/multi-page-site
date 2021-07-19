@@ -234,8 +234,8 @@
             border-right: none;
             border-bottom: 1px dashed #ffffff;
             padding-right: 0;
-            padding-bottom: 5px;
-            margin-bottom: 5px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
           }
         }
         &:not(:first-child) {
@@ -258,7 +258,8 @@
             display: none;
           }
           @media (max-width: 460px) {
-            display: block;
+            display: flex;
+            align-items: center;
             padding-top: 0;
             margin-right: 15px;
           }

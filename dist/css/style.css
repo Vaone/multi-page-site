@@ -20800,8 +20800,8 @@ iframe.uk-cover {
     border-right: none;
     border-bottom: 1px dashed #ffffff;
     padding-right: 0;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .our-lab__statistics-content .stat__cont-item:not(:first-child) {
@@ -20809,7 +20809,12 @@ iframe.uk-cover {
   }
 
   .our-lab__statistics-content .stat__cont-item-icon {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 0;
     margin-right: 15px;
   }
