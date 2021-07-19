@@ -20607,11 +20607,13 @@ iframe.uk-cover {
 
   .our-lab__team .tm__card .cnt {
     font-size: 16px;
+    line-height: 1.5;
     min-height: auto;
   }
 
   .our-lab__team .tm__card .cnt-name {
     font-size: 16px;
+    line-height: 1.5;
   }
 
   .our-lab__team .tm__card .cnt-description {

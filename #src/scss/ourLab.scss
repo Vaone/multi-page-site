@@ -340,7 +340,7 @@
         }
         @media (max-width: 768px) {
           font-size: 16px;
-          // line-height: 1;
+          line-height: 1.5;
           min-height: auto;
         }
         &-name {
@@ -350,11 +350,11 @@
 
           color: #292930;
           @media (max-width: 425px) {
-            // line-height: 1.1;
             font-size: 14px;
           }
           @media (max-width: 768px) {
             font-size: 16px;
+            line-height: 1.5;
           }
         }
         &-description {
