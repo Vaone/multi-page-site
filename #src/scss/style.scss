@@ -76,6 +76,8 @@ body._lock, .form._lock {
 }
 // card
 .block__card {
+  display: flex;
+  flex-direction: column;
   border-radius: 29px;
   background: #f6f9fc;
 
@@ -104,13 +106,14 @@ body._lock, .form._lock {
     }
   }
   &-description {
+    flex: 1 0 auto;
+    margin-bottom: 27px;
     margin-top: 15px;
+
     font-weight: 500;
     font-size: 18px;
     line-height: 166.69%;
-
     color: #7d7e86;
-    margin-bottom: 27px;
     @media (max-width: 768px) {
       font-size: 14px;
     }
@@ -123,6 +126,12 @@ body._lock, .form._lock {
         background: #fe5e7a;
       }
     }
+  }
+  &-btn {
+    flex: 0 0 auto;
+    max-width: 176px;
+    padding: 16px 0;
+    text-align: center;
   }
 }
 .block__tag {
