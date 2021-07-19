@@ -20785,6 +20785,8 @@ iframe.uk-cover {
     border-right: none;
     border-bottom: 1px dashed #ffffff;
     padding-right: 0;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
   }
 
   .our-lab__statistics-content .stat__cont-item:not(:first-child) {
