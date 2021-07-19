@@ -20603,7 +20603,6 @@ iframe.uk-cover {
 
   .our-lab__team .tm__card .cnt {
     font-size: 16px;
-    line-height: 1;
     min-height: auto;
   }
 
@@ -20613,7 +20612,6 @@ iframe.uk-cover {
 
   .our-lab__team .tm__card .cnt-description {
     font-size: 14px;
-    line-height: 1.1;
   }
 
   .news .block__wrapper {
@@ -20956,7 +20954,6 @@ iframe.uk-cover {
   }
 
   .our-lab__team .tm__card .cnt-name {
-    line-height: 1.1;
     font-size: 14px;
   }
 
