@@ -6,13 +6,20 @@
     @media (max-width:1440px) {
       margin-left: -15px;
     }
+    @media (max-width:420px) {
+      margin-left: 0;
+    }
   }
   .uk-grid>* {
     padding-left: 25px;
+    
     @media (max-width:1440px) {
       padding-left: 15px;
       display: flex;
       justify-content: center;
+    }
+    @media (max-width:420px) {
+      padding-left: 0;
     }
   }
   *+.uk-grid-margin {
@@ -70,6 +77,12 @@
         font-size: 14px;
         line-height: 1.2;
         bottom: -7.5px;
+      }
+    }
+
+    &-pagination {
+      @media (max-width: 420px) {
+        justify-content: center;
       }
     }
   }

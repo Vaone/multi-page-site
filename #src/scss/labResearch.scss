@@ -10,6 +10,9 @@
     @media (max-width: 768px) {
       padding: 20px 30px 20px 30px;
     }
+    p {
+      color: #000;
+    }
   }
   .block__title {
     font-family: "Montserrat", sans-serif;
@@ -35,7 +38,7 @@
     }
     @media (max-width: 768px) {
       font-size: 16px;
-      line-height: 1.2;
+      line-height: 1.5;
       margin: 20px 0 20px 0;
     }
   }
@@ -56,7 +59,7 @@
         border-radius: 15px;
         @media (max-width: 768px) {
           font-size: 14px;
-          line-height: 1.1;
+          line-height: 1.5;
         }
         &-icon{
           margin-bottom: 15px;
@@ -90,7 +93,7 @@
     box-shadow: none;
     padding: 20px 20px 35px 20px;
     @media (max-width: 639.5px) {
-      width: 500px;
+      // width: 500px;
     }
     &-img {
       width: 100%;
@@ -121,6 +124,7 @@
       padding-right: 10px;
       border-radius: 8px;
       margin-right: 16px;
+      max-width: 176px;
 
       white-space: nowrap;
       font-weight: 600;
@@ -147,6 +151,9 @@
 
     &-pagination {
       margin-top: 20px;
+      @media (max-width: 420px) {
+        justify-content: center;
+      }
     }
   }
 
@@ -155,9 +162,15 @@
     @media (max-width: 1366px) {
       margin-left: -15px;
     }
+    @media (max-width: 420px) {
+      margin-left: 0;
+    }
     &>*{
       @media (max-width: 1366px) {
         padding-left: 15px;
+      }
+      @media (max-width: 420px) {
+        padding-left: 0;
       }
     }
   }

@@ -2,6 +2,7 @@
   .block__wrapper {
     margin-bottom: 70px;
   }
+
   .block__map-wrapper {
     margin-bottom: 74px;
     height: 720px;
@@ -9,12 +10,17 @@
       height: 400px;
     }
   }
+
   .uk-grid {
     margin-left: -25px;
     @media (max-width:1440px) {
       margin-left: -15px;
     }
+    @media (max-width:420px) {
+      margin-left: 0;
+    }
   }
+
   .uk-grid>* {
     padding-left: 25px;
     @media (max-width:1440px) {
@@ -22,7 +28,11 @@
       display: flex;
       justify-content: center;
     }
+    @media (max-width:420px) {
+      padding-left: 0;
+    }
   }
+  
   *+.uk-grid-margin {
     @media (min-width: 1200px) {
       margin-top: 25px;
@@ -31,6 +41,7 @@
       margin-top: 15px;
     }
   }
+
   .block__card {
     background:#F6F9FC;
     box-shadow: none;
@@ -38,11 +49,13 @@
     @media (max-width: 639.5px) {
       width: 500px;
     }
+
     &-img {
       img {
         border-radius: 20px;
       }
     }
+
     &-btn {
       &-call {
         margin-right: 5px;
@@ -56,8 +69,12 @@
         padding: 10px;
       }
     }
+
     &-pagination {
       margin-top: 20px;
+      @media (max-width: 420px) {
+        justify-content: center;
+      }
     }
   }
 
@@ -68,17 +85,20 @@
       display: none;
     }
   }
+
   .block__background-anim {
     position: relative;
     @media (max-width: 425px) {
       display: none;
     }
+
     & .anim__bg-atom {
       position: absolute;
       top: -440px;
       right: -220px;
     }
   }
+  
   .anim__background-middle {
     bottom: 500px;
     left: -140px;

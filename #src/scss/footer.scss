@@ -137,6 +137,7 @@
           }
         }
         & .uk-accordion-content {
+          margin-top: 0;
           @media (min-width: 1024.5px) {
             display: block!important;
           }
@@ -230,7 +231,5 @@
         display: none;
       }
     }
-    
   }
-
 }
