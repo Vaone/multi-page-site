@@ -17814,7 +17814,7 @@ iframe.uk-cover {
 
 @media (min-width: 480px) {
   .our-lab__specialization .our-lab__specs > * {
-    width: calc(100%/2);
+    width: 50%;
   }
 }
 
@@ -18125,7 +18125,7 @@ iframe.uk-cover {
 
 @media (min-width: 768px) {
   .our-lab__specialization .our-lab__specs > * {
-    width: calc(100%/3);
+    width: 33.333%;
   }
 }
 
@@ -18558,7 +18558,7 @@ iframe.uk-cover {
 
 @media (min-width: 1024px) {
   .our-lab__specialization .our-lab__specs > * {
-    width: calc(100%/5);
+    width: 20%;
   }
 }
 
