@@ -17368,6 +17368,10 @@ iframe.uk-cover {
   margin-bottom: 80px;
 }
 
+.our-lab__specialization .our-lab__specs {
+  margin-top: 20px;
+}
+
 .our-lab__specialization .our-lab__specs > * {
   width: calc(100%);
 }
@@ -20566,7 +20570,6 @@ iframe.uk-cover {
   .our-lab .block__title {
     font-size: 20px;
     line-height: 1.1;
-    margin-bottom: 25px;
   }
 
   .our-lab__content {
