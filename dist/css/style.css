@@ -20022,7 +20022,7 @@ iframe.uk-cover {
     margin-right: 0;
   }
 
-  .form__input:not(:last-child) {
+  .form__input:first-child {
     margin-bottom: 20px;
     font-size: 3vw;
   }
