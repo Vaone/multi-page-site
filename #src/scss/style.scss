@@ -1,20 +1,3 @@
-//переменные
-// $minWidth: 320;
-// $maxWidth: 1366;
-// $maxWidthContainer: 1406;
-// $md1: $maxWidthContainer + 12;
-// $md2: 991.98;
-// $md3: 767.98;
-// $md4: 479.98;
-// $baseColor: #178f8f;
-// $secondColor: #430692c4;
-// $secondHover: #430692e6;
-// $thirdColor: #116868;
-// $thirdTr: #11d8ff24;
-// * {
-//   scroll-behavior: unset;
-// }
-
 body._lock, .form._lock {
   overflow-y: hidden!important;
 }
@@ -154,64 +137,6 @@ body._lock, .form._lock {
 .block__map-wrapper {
   border-radius: 31px;
   overflow: hidden;
-}
-
-// ----------------accordion for------------------
-.accordion {
-  &__btns {
-    & > li {
-      margin-top: 5px;
-    }
-  }
-  &__items-container {
-    transition: height 0.2s linear;
-  }
-  &__items-element {
-    transition: transform 0.35s linear;
-    & .accordion__item-card {
-      border-radius: 11.9295px;
-    }
-
-    & .accordion__item-title,
-    .accordion__item-title:focus,
-    .accordion__item-title:hover {
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      font-size: 21px;
-
-      color: #1b1139;
-      @media (max-width: 768px) {
-        font-size: 18px;
-      }
-      @media (max-width: 425px) {
-        font-size: 15px;
-      }
-      &::before {
-        float: left;
-        margin: 0 30px 0 0;
-        background-image: url("../img/plus-icon.svg");
-        background-size: contain;
-      }
-    }
-    .uk-open > .accordion__item-title::before {
-      background-image: url("../img/minus-icon.svg");
-    }
-
-    & .accordion__item-content {
-      font-size: 17px;
-      line-height: 150.7%;
-
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.12px;
-
-      color: #363049;
-      @media (max-width: 768px) {
-        font-size: 14px;
-        line-height: 1.1;
-      }
-    }
-  }
 }
 
 section,
@@ -361,6 +286,7 @@ header {
 
 @import "swiper.min";
 @import "uikit";
+@import "accordion";
 @import "header";
 @import "intro";
 @import "form";
@@ -371,6 +297,7 @@ header {
 @import "questions";
 @import "ourLocation";
 @import "consult";
+@import "labDiag";
 @import "treatmentArticle";
 @import "diagnoseArticle";
 @import "labResearch";
