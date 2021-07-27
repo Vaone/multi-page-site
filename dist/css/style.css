@@ -16893,7 +16893,7 @@ iframe.uk-cover {
 
 .lab-diag .block__tag {
   position: absolute;
-  top: 35px;
+  top: -10px;
   right: 15px;
   -webkit-box-shadow: 0px 5px 15px rgba(236, 87, 115, 0.3);
           box-shadow: 0px 5px 15px rgba(236, 87, 115, 0.3);
@@ -19462,6 +19462,10 @@ iframe.uk-cover {
     padding-left: 20px;
   }
 
+  .lab-diag .block__tag {
+    font-size: 16px;
+  }
+
   .footer__content-top > .right-side > .footer__accordion:not(:last-child) {
     margin-right: 5vw;
   }
@@ -19651,13 +19655,6 @@ iframe.uk-cover {
 @media (max-width: 1366.5px) {
   .form__input-error {
     top: -17px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .lab-diag .block__tag {
-    top: -10px;
-    font-size: 16px;
   }
 }
 
