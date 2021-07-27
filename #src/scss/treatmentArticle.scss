@@ -112,38 +112,6 @@
     }
   }
 
-  // accordion 
-  .accordion__items-element .accordion__item-content {
-    @media (max-width: 768px) {
-      font-size: 16px;
-    }
-    @media (max-width: 425px) {
-      font-size: 14px;
-    }
-  }
-  .accordion__items-element .accordion__item-title, .accordion__items-element .accordion__item-title:focus, .accordion__items-element .accordion__item-title:hover {
-    @media (max-width: 425px) {
-      font-size: 14px;
-    }
-  }
-
-  // accordion btns
-  .accordion__btns .btn {
-    color: #ffffff;
-    box-shadow: 0px 15px 15px rgba(254, 94, 122, 0.31);
-    background: #fe5e7a;
-    padding: 10px 19px;
-    @media (max-width: 768px) {
-      padding: 8px 10px;
-      font-size: 12px;
-      line-height: 1.1;
-    }
-    &:hover {
-      background: #0d1026;
-      box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
-      color: #fff;
-    }
-  }
   .uk-subnav-pill > .uk-active > a {
     background: #0d1026;
     box-shadow: 0px 15px 15px rgba(36, 36, 36, 0.31);
