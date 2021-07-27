@@ -14,7 +14,13 @@
             <a class="header__nav-link" href="#">О клинике</a>
           </li>
           <li>
-            <a class="header__nav-link" href="#">Услуги и цены</a>
+            <div class="uk-inline">
+              <button class="uk-button uk-button-default uk-navbar-nav-dropdown" type="button">Информация</button>
+              <div uk-dropdown>            
+                <a class="header__nav-link" href="#">Услуги и цены</a>
+                <a class="header__nav-link" href="#">Услуги и цены</a>
+              </div>
+            </div>
           </li>
           <li>
             <a class="header__nav-link" href="#">Пациентам</a>
@@ -85,7 +91,21 @@
           <a class="header__nav-link" href="#">О клинике</a>
         </li>
         <li>
-          <a class="header__nav-link" href="#">Услуги и цены</a>
+          <ul uk-accordion class="header__accordion">
+            <li class='accordion__key'>
+              <a class="uk-accordion-title accordion__item-title" href="#">Services
+              </a>
+                <div class="uk-accordion-content header__accordion-content">
+                    <ul class="submenu__accordion">
+                        <li><a href="#" class="header__nav-link">Documentation</a></li>
+                        <li><a href="#" class="header__nav-link">Design</a></li>
+                        <li><a href="#" class="header__nav-link">Themes</a></li>
+                        <li><a href="#" class="header__nav-link">Illustrations</a></li>
+                        <li><a href="#" class="header__nav-link">UI KIT</a></li>
+                    </ul>
+                </div>
+            </li>
+          </ul>
         </li>
         <li>
           <a class="header__nav-link" href="#">Пациентам</a>

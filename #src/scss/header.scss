@@ -67,25 +67,30 @@
       @media (max-width: 1024px) {
         display: none;
       }
+      
       & > li {
         padding: 0;
         padding: 0 5px 0 0;
         @media (max-width: 1367px) {
           // padding: 0 10px 0 0;
         }
-        & > a {
+        
+        & .header__nav-link, & .uk-navbar-nav-dropdown {
           font-family: "Poppins", sans-serif;
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
           line-height: 27px;
           text-transform: none;
+          text-decoration: none;
           color: #000000;
           padding: 0 10px;
           border-radius: 30px;
           height: 59px;
           min-height: auto;
-          transition: background .5s linear, color .5s linear;
+          transition: background .5s linear, color .5s linear, opacity .5s linear;
+
+          border: none;
           &:hover {
             background-color: #fe5e7a;
             color: #fff;
@@ -98,6 +103,7 @@
     }
   }
 }
+
 .uk-offcanvas {
   &-close {
     border-radius: 50%;
@@ -110,11 +116,35 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     & > .uk-nav {
       & > li {
-        & > a {
-          color: #000;
-        }
         &:first-child {
           margin-bottom: 10px;
+        }
+        & .header__nav-link, & .accordion__item-title {
+          color: #000;
+          padding: 5px 0;
+          text-transform: none;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        & .accordion__item-title {
+          &::before {
+            width: 1.5em;
+            height: 1.5em;
+            background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.1%22%20points%3D%2210%201%204%207%2010%2013%22%20%2F%3E%0A%3C%2Fsvg%3E);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            transform: rotate(-90deg);
+            display: none;
+            @media (max-width: 1024px) {
+              display: block;
+            }
+          }
+        }
+        & .header__accordion-content {
+          background-color: rgba(90, 35, 116, 0.24);
+          padding-left: 10px;
+          margin-top: 0;
         }
       }
     }
@@ -187,8 +217,6 @@
     &-arrow {
       margin-left: 10px;
     }
-    
-    
   }
 }
 
