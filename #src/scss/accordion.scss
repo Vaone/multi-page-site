@@ -1,12 +1,12 @@
 // ---------------- Акордион ------------------
 .accordion {
-  // кнопка акордиона
+  // кнопка акордиона фильтра
   &__btns {
     & > li {
       margin-top: 5px;
     }
   }
-
+  
   &__items-container {
     transition: height 0.2s linear;
   }
