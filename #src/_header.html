@@ -5,9 +5,9 @@
         <ul class="uk-navbar-nav">
           <li class="uk-active">
             <a href="#"><img loading="lazy" src="./img/logo.png" alt="" width="126px" height="72px"/></a>
-          </li>
-        </ul>
-      </div>
+          </li> <!-- /uk-active -->
+        </ul> <!-- /uk-navbar-nav -->
+      </div> <!-- /uk-navbar-left header-logo -->
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
           <li class="uk-active">
@@ -45,7 +45,7 @@
             <rect x="2" y="9" width="16" height="1"></rect>
             <rect x="2" y="14" width="16" height="1"></rect>
           </svg>
-        </button>
+        </button> <!-- /uk-navbar-toogle -->
         <div class="uk-inline header__lang-changer">
           <button type="button" class="header__lang-btn">
             <img loading="lazy" src="./img/englang.png" alt="" width="31px" height="31px" class="header__lang-btn-icon"/>
@@ -67,14 +67,19 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div> <!-- /header__lang-list -->
+
+          <!-- анимация курсора -->
           <div class="anim-bg3">
             <img loading="lazy" src="./img/Cursor.png" alt="" class="header__cursor" width="135px" height="160px"/>
           </div>
-        </div>
-      </div>
+
+        </div> <!-- /header__lang-changer -->
+      </div> <!-- uk-navbar-right -->
     </nav>
   </div>
+
+  <!-- Меню адаптива для мобильных разрешений -->
   <div id="offcanvas-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
       <button class="uk-offcanvas-close" type="button">
