@@ -17479,7 +17479,16 @@ iframe.uk-cover {
 }
 
 .our-lab__statistics {
-  height: 255px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 255px;
   background: #FE5E7A;
   width: 100%;
 }
@@ -17562,6 +17571,7 @@ iframe.uk-cover {
   background: #fff;
   margin-top: 20px;
   min-height: 200px;
+  height: 100%;
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
   font-size: 17px;
@@ -20790,7 +20800,7 @@ iframe.uk-cover {
 
 @media (max-width: 460px) {
   .our-lab__statistics {
-    height: auto;
+    min-height: auto;
   }
 
   .our-lab__statistics-content {

@@ -188,11 +188,14 @@
   }
 
   &__statistics {
-    height: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 255px;
     background: #FE5E7A;
     width: 100%;
     @media (max-width: 460px) {
-      height: auto;
+      min-height: auto;
     }
     &-bg {
       position: relative;
@@ -327,6 +330,7 @@
         background: #fff;
         margin-top: 20px;
         min-height: 200px;
+        height: 100%;
 
         font-family: "Gilroy", sans-serif;
         font-weight: 500;
@@ -388,6 +392,7 @@
     }
   }
 
+  // ANIMATION
   & .anim__background-mask {
     top: -105px;
     left: -140px;
