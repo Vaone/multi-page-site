@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body._lock, .form._lock {
   overflow-y: hidden!important;
 }

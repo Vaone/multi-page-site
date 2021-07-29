@@ -142,9 +142,12 @@
           }
         }
         & .header__accordion-content {
-          background-color: rgba(90, 35, 116, 0.24);
           padding-left: 10px;
           margin-top: 0;
+          .header__nav-link {
+            color: #333;
+            padding: 0;
+          }
         }
       }
     }
